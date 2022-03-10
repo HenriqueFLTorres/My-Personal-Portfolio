@@ -1,0 +1,116 @@
+
+.Navbar {
+    width: 100%;
+    height: var(--nav-height);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 100;
+
+    padding: 0 8%;
+
+    background-color: var(--color-secondary);
+
+    box-shadow: 0 0 1.75rem var(--color-secondary);
+}
+
+
+
+.Logo {
+    height: 70%;
+
+    fill: var(--color-primary);
+}
+
+
+
+.Navlinks,
+.Navlinks li,
+.Navlinks a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navlinks {
+
+    list-style: none;
+}
+
+.Navlinks li {
+    width: 20rem;
+    height: var(--nav-height);
+
+    pointer-events: none;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-duration: ease;
+}
+
+.Navlinks li:hover {
+    transform: translateY(7%);
+}
+
+.Navlinks a {
+    pointer-events: auto;
+
+    font-size: var(--step-1);
+    font-weight: 500;
+    width: 12rem;
+
+    transition-property: font-size, font-weight, color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--custom-ease);
+}
+
+.Navbar a::before {
+    position: absolute;
+    content: '';
+    
+    top: 0;
+
+    width: 20rem;
+    height: .4rem;
+
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+    transform: scale(0, 1);
+
+    background-color: var(--color-primary);
+    box-shadow: 0 0 .5rem .1rem var(--color-primary);
+
+    transition-property: transform, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-duration: ease-in-out;
+}
+
+.Navlinks a:hover::before {
+    transform: scale(0.8, 1) translateY(-.68rem);
+}
+
+
+
+
+.linkActive a {
+    font-weight: 600;
+    font-size: var(--step-2);
+
+    color: var(--color-terciary);
+}
+
+.linkActive a::before {
+    background-color: var(--color-terciary);
+    box-shadow: 0 0 .5rem 0.1rem var(--color-terciary);
+    transform: scale(0.8, 1);
+}
+
+.linkActive a:hover {
+    font-size: var(--step-1);
+    font-weight: 600;
+}

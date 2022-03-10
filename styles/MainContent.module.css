@@ -1,0 +1,161 @@
+
+.mainBackground {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 90vh;
+
+    padding: 7% 5%;
+}
+
+.bigLogo {
+    fill: var(--color-secondary);
+
+    position: relative;
+    z-index: 3;
+
+    height: 60vh;
+}
+
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 3;
+
+    height: 60vh;
+    width: 50%;
+
+    color: var(--color-terciary);
+
+    text-align: end;
+}
+
+.mainText {
+    font-size: var(--step-4);
+    font-weight: 600;
+
+    padding-top: 5%;
+}
+
+.mainText .highlighted {
+    font-size: calc(var(--step-4) + 0.2vw);
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 3;
+
+    cursor: pointer;
+
+    width: 100%;
+
+    gap: 15%;
+}
+
+.icon {
+    width: 8rem;
+
+    cursor: pointer;
+
+    transition-property: transform, filter;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.icon :last-child {
+    fill: var(--color-terciary);
+}
+
+.icon:hover {
+    transform: scale(1.3, 1.3);;
+
+    filter: drop-shadow(0 0 0.20vw var(--color-secondary));
+}
+
+.icon:hover :last-child {
+    fill: var(--color-secondary);
+}
+
+
+
+
+
+.blurCircle {
+    width: 2vw;
+    height: 2vw;
+
+    position: absolute;
+    z-index: 0;
+
+    border-radius: 100%;
+
+    background: linear-gradient(130deg, rgb(179, 107, 71) 0%, rgb(222, 78, 83) 100%);
+    filter: blur(.4rem);
+
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 1;
+}
+
+.blurCircle:nth-of-type(1) {
+    top: 250px;
+    right: 500px;
+    animation-duration: 4s;
+}
+
+.blurCircle:nth-of-type(2) {
+    top: 120px;
+    right: 800px;
+    animation-duration: 2s;
+}
+
+.blurCircle:nth-of-type(3) {
+    top: 325px;
+    right: 1200px;
+    animation-duration: 3s;
+}
+
+.blurCircle:nth-of-type(4) {
+    top: 600px;
+    right: 900px;
+    animation-duration: 1.5s;
+}
+
+.blurCircle:nth-of-type(5) {
+    top: 900px;
+    right: 500px;
+    animation-duration: 4.5s;
+}
+
+.blurCircle:nth-of-type(6) {
+    top: 900px;
+    left: 300px;
+    animation-duration: 3.4s;
+}
+
+.blurCircle:nth-of-type(7) {
+    top: 200px;
+    left: 150px;
+    animation-duration: 2.4s;
+}
+
+
+@keyframes pulse {
+    from { transform: scale(1, 1); }
+    to { transform: scale(2, 2); }
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Home",
+        "redirect": "/"
+    },
+    {
+        "title": "Projetos",
+        "redirect": "/projetos"
+    },
+    {
+        "title": "Estudos",
+        "redirect": "/"
+    },
+    {
+        "title": "Contato",
+        "redirect": "/"
+    }
+]
