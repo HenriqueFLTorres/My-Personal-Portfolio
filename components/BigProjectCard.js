@@ -13,12 +13,13 @@ const BigProjectCard = ({ title, date, images, description, technologies }) => {
   let maxNumber = images.length - 1;
 
   const arrowTransform = (e) => {
-    typeof window !== 'undefined' &&
-    e.target.firstChild.classList.toggle("ArrowActive")
-
-    // setTimeout(() => {
-    //     e.target.firstChild.classList.toggle("ArrowActive")
-    // }, 200);
+    try {
+      e.target.firstChild.classList.toggle("ArrowActive")
+  
+      setTimeout(() => {
+          e.target.firstChild.classList.toggle("ArrowActive")
+      }, 200);
+    } catch(e){}
   }
 
   return (
