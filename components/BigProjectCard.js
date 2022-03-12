@@ -4,10 +4,11 @@ import styles from "../styles/projects.module.css";
 import Arrow from "../SVG/Arrow";
 
 import clsx from "clsx";
-// import arrowTransform from "../utils/arrowTransform";
+import Github from '../SVG/Github'
+import LinkSVG from "../SVG/LinkSVG";
 import checkNumber from "../utils/checkNumber";
 
-const BigProjectCard = ({ title, date, images, description, technologies }) => {
+const BigProjectCard = ({ title, date, images, description, technologies, github, linkWeb }) => {
   const [activeImage, setActiveImage] = useState(0);
 
   let maxNumber = images.length - 1;
@@ -18,7 +19,7 @@ const BigProjectCard = ({ title, date, images, description, technologies }) => {
   
       setTimeout(() => {
           e.target.firstChild.classList.toggle("ArrowActive")
-      }, 200);
+      }, 250);
     } catch(e){}
   }
 
@@ -58,12 +59,22 @@ const BigProjectCard = ({ title, date, images, description, technologies }) => {
         />
       </div>
       <div className={styles.cardInfo}>
-        <h1>{title}</h1>
+        <div className={styles.head}>
+          <h1>{title}</h1>
+          <div className={styles.icons}>
+            <Github link={github} />
+          { linkWeb && <LinkSVG link={linkWeb} /> }
+          </div>
+        </div>
         <h3>{date}</h3>
         <p>{description}</p>
-        {technologies.map((span, index) => (
+        <div className={styles.tags}>
+          {technologies.map((span, index) => (
           <span key={index}>{span}</span>
         ))}
+        <span>Changelog</span>
+        </div>
+        
       </div>
     </div>
   );
