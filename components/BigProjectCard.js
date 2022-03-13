@@ -4,8 +4,8 @@ import styles from "../styles/projects.module.css";
 import Arrow from "../SVG/Arrow";
 
 import clsx from "clsx";
-import Github from '../SVG/Github'
-import LinkSVG from "../SVG/LinkSVG";
+import { FaGithubSquare } from 'react-icons/fa'
+import { BsLink45Deg } from 'react-icons/bs'
 import checkNumber from "../utils/checkNumber";
 
 const BigProjectCard = ({ title, date, images, description, technologies, github, linkWeb }) => {
@@ -14,13 +14,16 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
   let maxNumber = images.length - 1;
 
   const arrowTransform = (e) => {
-    try {
-      e.target.firstChild.classList.toggle("ArrowActive")
+      e.target.classList.toggle("ArrowActive")
   
       setTimeout(() => {
-          e.target.firstChild.classList.toggle("ArrowActive")
+        e.target.classList.toggle("ArrowActive")
       }, 250);
-    } catch(e){}
+      // e.target.firstChild.classList.add("ArrowActive")
+  
+      // setTimeout(() => {
+      //     e.target.firstChild.classList.remove("ArrowActive")
+      // }, 800);
   }
 
   return (
@@ -33,23 +36,24 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
             arrowTransform(e);
           }}
         />
-        {images.map((image, index) => {
-          let imagePosition = "image Right";
+        <div className={styles.imageContainer}>
+          {images.map((image, index) => {
+            let imagePosition = "image Right";
 
-          if (index === activeImage) imagePosition = "image Active";
-          else if (
-            index === activeImage - 1 ||
-            (activeImage === 0 && index === images.length - 1)
-          )
-            imagePosition = "image Left";
-
-          return (
-            <div key={index} className={clsx(imagePosition)}>
-              <img className={styles.imageView} src={image} alt={title} />
-              <img className={styles.imageBlur} src={image} alt={title} />
-            </div>
-          );
-        })}
+            if (index === activeImage) imagePosition = "image Active";
+            else if (
+              index === activeImage - 1 ||
+              (activeImage === 0 && index === images.length - 1)
+            )
+              imagePosition = "image Left";
+            return (
+              <div key={index} className={clsx(imagePosition)}>
+                <img className={styles.imageView} src={image} alt={title} />
+                <img className={styles.imageBlur} src={image} alt={title} />
+              </div>
+            );
+          })}
+        </div>
         <Arrow
           className={styles.arrowRight}
           onClick={(e) => {
@@ -62,8 +66,10 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
         <div className={styles.head}>
           <h1>{title}</h1>
           <div className={styles.icons}>
-            <Github link={github} />
-          { linkWeb && <LinkSVG link={linkWeb} /> }
+            <FaGithubSquare href={github} target="_blank" />
+          { linkWeb && 
+            <BsLink45Deg href={linkWeb} target="_blank" />
+          }
           </div>
         </div>
         <h3>{date}</h3>
@@ -74,7 +80,6 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
         ))}
         <span>Changelog</span>
         </div>
-        
       </div>
     </div>
   );

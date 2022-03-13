@@ -12,8 +12,11 @@
 .bigTitle {
     font-size: var(--step-3);
     color: var(--color-secondary);
+    background: linear-gradient(160deg, rgba(211, 125, 76, 1) 0%, rgba(234, 81, 86, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .bigProjectsContainer {
@@ -35,6 +38,7 @@
     flex-direction: column;
 
     overflow: hidden;
+    user-select: none;
 
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter:blur(40px);
@@ -51,17 +55,27 @@
     align-items: center;
 
     height: 60%;
-    width: 100%;
-
-    gap: 60%;
+    max-width: 100%;
 
     border-top-left-radius: .5vw;
     border-top-right-radius: .5vw;
 
-    clip-path: inset(-100% 0 0 0);
+    /* clip-path: inset(-100% 0 0 0); */
     background-color: #282828;
 }
 
+.imagesDisplay .imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 60%;
+    border: 5px solid pink;
+}
 
 
 
@@ -69,6 +83,11 @@
     flex-direction: row;
 
     grid-column: span 2;
+}
+
+.bigCard:first-child .imageContainer {
+    height: 100%;
+    width: 50%;
 }
 
 .bigCard:first-child .imagesDisplay { 
@@ -87,7 +106,7 @@
     height: 3vw;
 }
 
-.bigCard:first-child .imagesDisplay > * {
+.bigCard:first-child .imageContainer > * {
 
     width: 50%;
     height: 100%;
@@ -95,7 +114,7 @@
 
 
 
-.bigCard:first-child .imagesDisplay > :not( :first-child ):not( :last-child ) { 
+.bigCard:first-child .imageContainer > :not( :first-child ):not( :last-child ) { 
     border-top-right-radius: 0;
     border-bottom-left-radius: .5vw;
 }
@@ -132,6 +151,7 @@
 .arrowLeft, .arrowRight {
     position: absolute;
     z-index: 7;
+    overflow: visible;
 
     cursor: pointer;
 
@@ -221,8 +241,11 @@
 
 .cardInfo .head .icons {
     display: flex;
-
-    gap: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    gap: 20%;
 }
 
 .icons > * path {
@@ -233,7 +256,7 @@
 }
 
 .cardInfo .head .icons > * {
-    height: 100%;
+    font-size: 1.5vw;
     fill: var(--color-terciary);
 
     cursor: pointer;
@@ -330,10 +353,57 @@
 
 
 .seeMore {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3%;
+
+    width: 62%;
     height: 20vw;
 
-    margin-top: 10%;
+    color: var(--color-primary);
 
-    background-color: var(--color-secondary);
+    margin-top: 15%;
+
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter:blur(1.8px);
+    box-shadow: 0 0 1vw 0 rgba(223, 108, 82, 0.585);
+    background-image: linear-gradient(220deg, rgba(211, 125, 76, 0.804) 0%, rgba(234, 81, 86, 0.475) 100%);
+
+    border-radius: 1vw;
+}
+
+.seeMore h1 {
+    font-size: var(--step-1);
+}
+
+.bigGit {
+    font-size: calc(7vw + 1rem);
+    fill: var(--color-primary);
+
+    margin-top: 5%;
+    cursor: pointer;
+
+    transition-property: transform, fill;
+    transition: 350ms ease;
+}
+
+.bigGit:hover {
+    fill: rgb(60, 60, 60);
+    transform: scale(1.2, 1.2);
+}
+
+.seeMore h4 a {
+    color: var(--color-primary);
+    font-size: var(--step--1);
+    font-weight: 500;
+
+    transition-property: color;
+    transition: 350ms ease;
+}
+
+.seeMore h4 a:hover {
+    color: rgb(60, 60, 60);
 }

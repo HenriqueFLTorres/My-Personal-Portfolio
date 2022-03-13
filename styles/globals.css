@@ -58,12 +58,10 @@ a {
   user-select: none;
   pointer-events: none;
 
-  opacity: 0;
+  opacity: 1;
 
   width: 100%;
   height: 60%;
-
-  overflow: hidden;
 
 
   border-top-left-radius: .5vw;
@@ -97,6 +95,6 @@ a {
 
 
 
-.ArrowActive {
+.ArrowActive > * {
   transform: translateY(40%);
 }

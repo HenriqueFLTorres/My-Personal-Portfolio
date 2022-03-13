@@ -16,9 +16,6 @@ const Navbar = ({ tab }) => {
     [styles.linkActive]: selected === 0,
     [styles.linkOff]: selected != 0,
   });
-
-  console.log(selected);
-
   return (
     <div className={styles.Navbar}>
         <HTLogo className={styles.Logo}/>
