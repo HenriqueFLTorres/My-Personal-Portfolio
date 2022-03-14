@@ -65,8 +65,7 @@
     z-index: 2;
     opacity: 0.75;
 
-    left: 17%;
-    bottom: -69%;
+    transform: translate(3%, 7%);
 }
 
 .aboutBG:nth-of-type(3) {
@@ -74,6 +73,6 @@
     z-index: 1;
     opacity: 0.4;
 
-    left: 19%;
-    bottom: -72%;
+    transform: translate(6%, 11%);
+
 }

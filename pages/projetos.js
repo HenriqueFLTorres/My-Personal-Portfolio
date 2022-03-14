@@ -6,7 +6,7 @@ import bigProjects from '../Data/bigProjects.json'
 
 import styles from '../styles/projects.module.css'
 import { FaGithubSquare } from 'react-icons/fa'
-import Github from '../SVG/Github.js'
+import WIP from '../components/WIP'
 
 const Projetos = () => {
   return (
@@ -15,9 +15,9 @@ const Projetos = () => {
         <h1 className={styles.bigTitle}>Veja alguns projetos!</h1>
         <div className={styles.bigProjectsContainer}>
           {bigProjects.map((project, index) => {
-            const { title, date, images, description, technologies, github, linkWeb } = project
+            const { title, date, images, description, technologies, github, linkWeb, changelog } = project
 
-            return <BigProjectCard key={index} title={title} date={date} images={images} description={description} technologies={technologies} github={github} linkWeb={linkWeb} />
+            return <BigProjectCard key={index} title={title} date={date} images={images} description={description} technologies={technologies} github={github} linkWeb={linkWeb} changelog={changelog} />
           })}
         </div>
         <div className={styles.seeMore}>
@@ -25,6 +25,7 @@ const Projetos = () => {
           <FaGithubSquare className={styles.bigGit} href='https://github.com/HenriqueFLTorres' target='_blank'/>
           <h4><a href='https://github.com/HenriqueFLTorres' target="_blank">github.com/HenriqueFLTorres</a></h4>
         </div>
+        <WIP/>
     </div>
   )
 }

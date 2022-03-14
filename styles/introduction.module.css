@@ -1,0 +1,74 @@
+.introDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80%;
+    height: 60vh;
+
+    margin: 5% auto;
+    margin-bottom: 10%;
+}
+
+.introDiv h3, .highlighted, .blue {
+    display: inline;
+
+    color: var(--color-terciary);
+    font-size: var(--step-4);
+    font-weight: 700;
+
+    width: 50%;
+}
+
+.highlighted,
+.blue {
+    font-size: calc(var(--step-4) + .1vw);
+    color: var(--color-secondary);
+    font-weight: 800;
+}
+
+.skillsIcon {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 2%;
+
+    margin-left: 5%;
+}
+
+.skillsIcon > * {
+    font-size: 3vw;
+    fill: #dfdfdf;
+
+    transition-property: fill, filter;
+    transition: 350ms ease;
+}
+
+.skillsIcon > *:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.htmlIcon:hover {
+    fill: #dc4a25;
+    filter: drop-shadow(0 0 .15vw #dc4a25);
+}
+
+.cssIcon:hover {
+    fill: #274ce4;
+    filter: drop-shadow(0 0 .15vw #274ce4);
+}
+
+.jsIcon:hover {
+    fill: #eed91d;
+    filter: drop-shadow(0 0 .15vw #eed91d);
+}
+
+.reactIcon:hover {
+    fill: #5ed2f2;
+    filter: drop-shadow(0 0 .15vw #5ed2f2);
+}
+
+.nextIcon:hover {
+    fill: #9a9898;
+    filter: drop-shadow(0 0 .15vw #1a1a1a);
+}

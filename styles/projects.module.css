@@ -56,38 +56,20 @@
 
     height: 60%;
     max-width: 100%;
+    gap: 50%;
 
     border-top-left-radius: .5vw;
     border-top-right-radius: .5vw;
 
-    /* clip-path: inset(-100% 0 0 0); */
+    clip-path: inset(-100% 0 0 0);
     background-color: #282828;
 }
-
-.imagesDisplay .imageContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-
-    width: 100%;
-    height: 60%;
-    border: 5px solid pink;
-}
-
 
 
 .bigCard:first-child {
     flex-direction: row;
 
     grid-column: span 2;
-}
-
-.bigCard:first-child .imageContainer {
-    height: 100%;
-    width: 50%;
 }
 
 .bigCard:first-child .imagesDisplay { 
@@ -106,15 +88,14 @@
     height: 3vw;
 }
 
-.bigCard:first-child .imageContainer > * {
-
+.bigCard:first-child .imagesDisplay > * {
     width: 50%;
     height: 100%;
 }
 
 
 
-.bigCard:first-child .imageContainer > :not( :first-child ):not( :last-child ) { 
+.bigCard:first-child .imagesDisplay > :not( :first-child ):not( :last-child ) { 
     border-top-right-radius: 0;
     border-bottom-left-radius: .5vw;
 }
@@ -190,6 +171,8 @@
     width: 100%;
     height: auto;
 
+    box-shadow: 0 0 .5vw;
+
 
     transition-property: opacity;
     transition-duration: 0.8s;
@@ -201,7 +184,7 @@
     z-index: 4;
 
     height: 100%;
-    width: auto;
+    width: 100%;
 
     opacity: 0.5;
     filter: blur(0.4vw);
@@ -363,13 +346,13 @@
     width: 62%;
     height: 20vw;
 
-    color: var(--color-primary);
+    color: var(--color-terciary);
 
     margin-top: 15%;
 
     backdrop-filter: blur(1.8px);
     -webkit-backdrop-filter:blur(1.8px);
-    box-shadow: 0 0 1vw 0 rgba(223, 108, 82, 0.585);
+    box-shadow: 0 0 .5vw 0 rgba(223, 108, 82, 0.585);
     background-image: linear-gradient(220deg, rgba(211, 125, 76, 0.804) 0%, rgba(234, 81, 86, 0.475) 100%);
 
     border-radius: 1vw;
@@ -381,7 +364,7 @@
 
 .bigGit {
     font-size: calc(7vw + 1rem);
-    fill: var(--color-primary);
+    fill: var(--color-terciary);
 
     margin-top: 5%;
     cursor: pointer;
@@ -391,12 +374,12 @@
 }
 
 .bigGit:hover {
-    fill: rgb(60, 60, 60);
+    fill: rgb(172, 172, 172);
     transform: scale(1.2, 1.2);
 }
 
 .seeMore h4 a {
-    color: var(--color-primary);
+    color: var(--color-terciary);
     font-size: var(--step--1);
     font-weight: 500;
 
@@ -405,5 +388,5 @@
 }
 
 .seeMore h4 a:hover {
-    color: rgb(60, 60, 60);
+    color: rgb(172, 172, 172);
 }

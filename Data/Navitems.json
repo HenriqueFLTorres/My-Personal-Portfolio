@@ -8,11 +8,7 @@
         "redirect": "/projetos"
     },
     {
-        "title": "Estudos",
-        "redirect": "/"
-    },
-    {
         "title": "Contato",
-        "redirect": "/"
+        "redirect": "/contato"
     }
 ]

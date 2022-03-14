@@ -8,7 +8,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 import { BsLink45Deg } from 'react-icons/bs'
 import checkNumber from "../utils/checkNumber";
 
-const BigProjectCard = ({ title, date, images, description, technologies, github, linkWeb }) => {
+const BigProjectCard = ({ title, date, images, description, technologies, github, linkWeb, changelog }) => {
   const [activeImage, setActiveImage] = useState(0);
 
   let maxNumber = images.length - 1;
@@ -36,7 +36,6 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
             arrowTransform(e);
           }}
         />
-        <div className={styles.imageContainer}>
           {images.map((image, index) => {
             let imagePosition = "image Right";
 
@@ -53,7 +52,6 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
               </div>
             );
           })}
-        </div>
         <Arrow
           className={styles.arrowRight}
           onClick={(e) => {

@@ -6,7 +6,8 @@
         "date": "08/03/22",
         "images": [ "https://i.imgur.com/2F3Al82.jpeg", "https://i.imgur.com/uUD0vMH.png", "https://i.imgur.com/39rweQj.png" ],
         "description": "asdfasd fasdf asdf dfsdafsd dfasdf asdf asdf d fasdfasdfas fdsaf",
-        "technologies": [ "HTML", "CSS", "REACT" ]
+        "technologies": [ "HTML", "CSS", "REACT" ],
+        "changelog": "A cool change this morning \n lets fix it right now"
     },
     {
         "title": "Personal Portfolio",

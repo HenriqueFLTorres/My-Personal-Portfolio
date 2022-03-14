@@ -1,0 +1,6 @@
+.contatoBG {
+    width: 100%;
+    background-size: cover;
+    
+    background: linear-gradient(163deg, rgba(247,107,27,1) 0%, rgba(68,13,116,1) 100%);
+}

@@ -41,9 +41,11 @@ a {
 
 .MainBackground {
   width: 100%;
-  height: 190vh;
+  background-size: cover;
 
   background: linear-gradient(125deg, rgba(36,36,36,1) 0%, rgba(19,19,19,1) 100%);
+
+  padding-bottom: 5%;
 }
 
 
@@ -97,4 +99,22 @@ a {
 
 .ArrowActive > * {
   transform: translateY(40%);
+}
+
+
+
+
+
+.WIP {
+  position: fixed;
+  opacity: .5;
+
+  right: -13.5%;
+  top: 50%;
+  
+  font-size: var(--step-0);
+  font-weight: 600;
+  color: var(--color-secondary);
+
+  transform: rotate(90deg);
 }
