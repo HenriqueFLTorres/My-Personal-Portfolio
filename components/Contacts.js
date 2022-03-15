@@ -15,17 +15,17 @@ const contato = () => {
     <div className={styles.contatoBG}>
         <div className={styles.contact}>
           <div className={styles.basics}>
-            <a className={styles.github} href='github.com/HenriqueFLTorres' target='_blank'>
+            <a className={styles.github} rel="noreferrer" href='github.com/HenriqueFLTorres' target='_blank'>
               <AiFillGithub />
               <h1>Github</h1>
               <h4>github.com/HenriqueFLTorres</h4>
             </a>
-            <a className={styles.linkedIn} href="www.linkedin.com/in/henriquefltorres/" target="_blank">
+            <a className={styles.linkedIn} rel="noreferrer" href="www.linkedin.com/in/henriquefltorres/" target="_blank">
               <BsLinkedin/>
               <h1>LinkedIn</h1>
               <h4>linkedin.com/in/henriquefltorres/</h4>
             </a>
-            <a className={styles.discord} href="discord.com/users/514829262902132754" target='_blank'>
+            <a className={styles.discord} rel="noreferrer" href="discord.com/users/514829262902132754" target='_blank'>
               <BsDiscord/>
               <h1>Discord</h1>
               <h4>Treffy#4964</h4>

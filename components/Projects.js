@@ -21,8 +21,8 @@ const Projects = () => {
         </div>
         <div className={styles.seeMore}>
           <h1>Acesse meu github para mais projetos</h1>
-          <FaGithubSquare className={styles.bigGit} href='https://github.com/HenriqueFLTorres' target='_blank'/>
-          <h4><a href='https://github.com/HenriqueFLTorres' target="_blank">github.com/HenriqueFLTorres</a></h4>
+          <FaGithubSquare className={styles.bigGit} rel="noreferrer" href='https://github.com/HenriqueFLTorres' target='_blank'/>
+          <h4><a rel="noreferrer" href='https://github.com/HenriqueFLTorres' target="_blank">github.com/HenriqueFLTorres</a></h4>
         </div>
     </div>
   )
