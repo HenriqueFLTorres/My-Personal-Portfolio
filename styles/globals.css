@@ -5,7 +5,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   box-sizing: border-box;
-
+  z-index: 50;
 }
 
 a {
@@ -36,6 +36,8 @@ a {
   --step-3: clamp(1.94rem, calc(1.31rem + 3.37vw), 3.42rem);
   --step-4: clamp(2.33rem, calc(1.50rem + 4.43vw), 4.27rem);
   --step-5: clamp(2.80rem, calc(1.71rem + 5.81vw), 5.34rem);
+
+  --r: rotate(0deg);
 }
 
 

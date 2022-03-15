@@ -1,0 +1,209 @@
+
+.polygonBackground {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+
+    /* overflow-y: hidden; */
+
+    transform: translateY(100%);
+}
+
+.polygon {
+    position: relative;
+    width: 7vw;
+    z-index: 1;
+
+    filter: blur(.75vw);
+}
+
+.polygon {
+    animation-name: felldown;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.polygon:nth-child(1) { 
+    --r: rotate(159deg);
+    transform: var(--r);
+    left: 32%;
+    top: -20%;
+
+    animation-duration: 7s;
+}
+
+.polygon:nth-child(2) { 
+    --r: rotate(137deg);
+    transform: var(--r);
+    left: 80%;
+    top: -210%;
+
+    animation-duration: 4.5s;
+}
+
+.polygon:nth-child(3) { 
+    --r: rotate(116deg);
+    transform: var(--r);
+    left: 75%;
+    top: 0%;
+
+    animation-duration: 5.5s;
+}
+
+.polygon:nth-child(4) { 
+    --r: rotate(87deg);
+    transform: var(--r);
+    left: 25%;
+    top: -180%;
+
+    animation-duration: 3.7s;
+}
+
+.polygon:nth-child(5) { 
+    --r: rotate(250deg);
+    transform: var(--r);
+    left: 34%;
+    top: -40%;
+
+    animation-duration: 6s;
+}
+
+.polygon:nth-child(6) { 
+    --r: rotate(331deg);
+    transform: var(--r);
+    left: -32%;
+    top: 76%;
+
+    animation-duration: 2.8s;
+}
+
+.polygon:nth-child(7) { 
+    --r: rotate(150deg);
+    transform: var(--r);
+    left: -36%;
+    top: -150%;
+
+    animation-duration: 3.9s;
+}
+
+.polygon:nth-child(8) { 
+    --r: rotate(215deg);
+    transform: var(--r);
+    left: -40%;
+    top: -48%;
+
+    animation-duration: 5.5s;
+}
+
+.polygon:nth-child(9) { 
+    --r: rotate(116deg);
+    transform: var(--r);
+    left: 0%;
+    top: -250%;
+
+    animation-duration: 5.2s;
+}
+
+.polygon:nth-child(10) { 
+    --r: rotate(210deg);
+    transform: var(--r);
+    left: 2%;
+    top: 34%;
+
+    animation-duration: 4.5s;
+}
+
+.polygon:nth-child(11) { 
+    --r: rotate(276deg);
+    transform: var(--r);
+    left: 19%;
+    top: -67%;
+
+    animation-duration: 3.9s;
+}
+
+.polygon:nth-child(12) { 
+    --r: rotate(19deg);
+    transform: var(--r);
+    left: -60%;
+    top: -220%;
+
+    animation-duration: 3.5s;
+}
+
+.polygon:nth-child(13) { 
+    --r: rotate(67deg);
+    transform: var(--r);
+    left: -56%;
+    top: -78%;
+
+    animation-duration: 4.2s;
+}
+
+.polygon:nth-child(14) { 
+    --r: rotate(356deg);
+    transform: var(--r);
+    left: -25%;
+    top: -150%;
+
+    animation-duration: 3.4s;
+}
+
+.polygon:nth-child(15) { 
+    --r: rotate(308deg);
+    transform: var(--r);
+    left: 60%;
+    top: 90%;
+
+    animation-duration: 5.2s;
+}
+
+.polygon:nth-child(16) { 
+    --r: rotate(229deg);
+    transform: var(--r);
+    left: -3%;
+    top: 22%;
+
+    animation-duration: 2.2s;
+}
+
+.polygon:nth-child(17) { 
+    --r: rotate(13deg);
+    transform: var(--r);
+    left: 45%;
+    top: -95%;
+
+    animation-duration: 3.8s;
+}
+
+.polygon:nth-child(18) { 
+    --r: rotate(346deg);
+    transform: var(--r);
+    left: 15%;
+    top: 4%;
+
+    animation-duration: 5.2s;
+}
+/* 
+.polygon:nth-child() { 
+    transform: rotate(deg) translate(-vw, -vh);
+} */
+
+@keyframes felldown {
+    0% {
+        transform: translateY(0%) scale(0, 0) var(--r);
+    }
+    25% {
+        transform: translateY(200%) scale(0.5, 0.5) var(--r);
+    }
+    50% {
+        transform: translateY(300%) scale(1, 1) var(--r);
+    }
+    75% {
+        transform: translateY(400%) scale(.75, .75) var(--r);
+    }
+    100% {
+        transform: translateY(500%) scale(0, 0) var(--r);
+    }
+}

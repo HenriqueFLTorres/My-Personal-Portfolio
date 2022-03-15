@@ -1,17 +1,16 @@
 import React from 'react'
 import BigProjectCard from '../components/BigProjectCard'
-import Navbar from '../components/Navbar'
 
 import bigProjects from '../Data/bigProjects.json'
 
 import styles from '../styles/projects.module.css'
 import { FaGithubSquare } from 'react-icons/fa'
-import WIP from '../components/WIP'
+import Polygons from './Polygons'
 
-const Projetos = () => {
+const Projects = () => {
   return (
     <div className={styles.projetosBackground}>
-        <Navbar tab={1}/>
+      <Polygons/>
         <h1 className={styles.bigTitle}>Veja alguns projetos!</h1>
         <div className={styles.bigProjectsContainer}>
           {bigProjects.map((project, index) => {
@@ -25,9 +24,8 @@ const Projetos = () => {
           <FaGithubSquare className={styles.bigGit} href='https://github.com/HenriqueFLTorres' target='_blank'/>
           <h4><a href='https://github.com/HenriqueFLTorres' target="_blank">github.com/HenriqueFLTorres</a></h4>
         </div>
-        <WIP/>
     </div>
   )
 }
 
-export default Projetos
+export default Projects

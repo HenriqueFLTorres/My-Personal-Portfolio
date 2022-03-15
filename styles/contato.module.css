@@ -1,6 +1,151 @@
 .contatoBG {
     width: 100%;
+    min-height: 100vh;
     background-size: cover;
-    
-    background: linear-gradient(163deg, rgba(247,107,27,1) 0%, rgba(68,13,116,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -5%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 80vh;
+}
+
+.basics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 17vw);
+    grid-auto-rows: 17vw;
+    justify-content: space-evenly;
+
+    width: 80%;
+    height: auto;
+
+    gap: 5%;
+}
+
+.basics > * > *:first-child {
+    font-size: 4vw;
+    fill: var(--color-terciary);
+
+    margin-top: 5%;
+}
+
+.basics > * > h1,
+.sendEmail h1 {
+    color: var(--color-terciary);
+    font-size: var(--step-1);
+
+    margin-top: auto;
+    margin-bottom: 1.5%;
+}
+
+.basics > * > h4 {
+    color: var(--color-terciary);
+    font-size: var(--step--1);
+    font-weight: 300;
+
+    margin-bottom: 10%;
+}
+
+.github,
+.linkedIn,
+.discord {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10%;
+    width: auto;
+    height: auto;
+
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter:blur(3.8px);
+    box-shadow: 0 0 1vw 0 rgba(224, 185, 244, 0.37);
+    background-image: linear-gradient(155deg, rgba(207, 178, 247, 0.62) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 14px;
+    border-bottom: 2.2px solid rgba(224, 185, 244, 0.37);
+    border-left: 2.2px solid rgba(224, 185, 244, 0.37);
+
+    transition-property: transform;
+    transition: 350ms ease;
+}
+
+.github:hover,
+.linkedIn:hover,
+.discord:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.sendEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 20vw;
+
+    margin-top: 5%;
+
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter:blur(3.8px);
+    box-shadow: 0 0 1vw 0 rgba(250, 250, 250, 0.37);
+    background-image: linear-gradient(155deg, rgba(186, 186, 186, 0.62) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 14px;
+    border-bottom: 2.2px solid rgba( 255, 255, 255, 0.39 );
+    border-left: 2.2px solid rgba( 255, 255, 255, 0.39 );
+}
+
+.emailIcon {
+    font-size: 20vh;
+    width: 45%;
+
+    fill: var(--color-terciary);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 45%;
+    height: 80%;
+}
+
+.info h1 {
+    margin-bottom: auto;
+}
+
+.info a {
+    background-color: var(--color-secondary);
+    border: none;
+    padding: 5% 10%;
+
+    color: var(--color-terciary);
+    font-size: var(--step-1);
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-bottom: 10%;
+    border-radius: 0.25vw;
+
+    transition-property: filter;
+    transition: 250ms ease;
+}
+
+.info a:hover {
+    filter: drop-shadow(0 0 .5vw var(--color-secondary));
 }

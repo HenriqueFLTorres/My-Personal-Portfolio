@@ -4,9 +4,9 @@
     align-items: center;
 
     width: 100%;
-    height: 200vh;
 
-    background: linear-gradient(125deg, rgba(36,36,36,1) 0%, rgba(19,19,19,1) 100%);
+    background-size: cover;
+    /* background: linear-gradient(125deg, rgba(36,36,36,1) 0%, rgba(19,19,19,1) 100%); */
 }
 
 .bigTitle {
@@ -15,8 +15,6 @@
     background: linear-gradient(160deg, rgba(211, 125, 76, 1) 0%, rgba(234, 81, 86, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    margin-top: 7%;
 }
 
 .bigProjectsContainer {
@@ -349,13 +347,13 @@
     color: var(--color-terciary);
 
     margin-top: 15%;
+    margin-bottom: 10%;
 
-    backdrop-filter: blur(1.8px);
-    -webkit-backdrop-filter:blur(1.8px);
-    box-shadow: 0 0 .5vw 0 rgba(223, 108, 82, 0.585);
-    background-image: linear-gradient(220deg, rgba(211, 125, 76, 0.804) 0%, rgba(234, 81, 86, 0.475) 100%);
-
-    border-radius: 1vw;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter:blur(40px);
+    box-shadow: 10px 10px 1vw rgba(24, 24, 24, 0.37);
+    background-image: linear-gradient( 65deg, rgba(48, 48, 48, 0.556), rgba(191, 191, 191, 0.092) );
+    border-radius: .5vw;
 }
 
 .seeMore h1 {

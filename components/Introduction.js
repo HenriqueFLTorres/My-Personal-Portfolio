@@ -11,7 +11,7 @@ const Introduction = () => {
   return (
     <div className={styles.introDiv}>
       <h3>
-        Olá, eu sou<div className={styles.highlighted}> Henrique Ferreira</div>, <br/>
+        Olá, eu sou<div className={styles.highlighted}> Henrique Torres</div>, <br/>
         um desenvolvedor <div className={styles.highlighted}>front-end </div>  <br/>
         de <div className={styles.blue}>react</div>.
         </h3>
