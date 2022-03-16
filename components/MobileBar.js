@@ -17,7 +17,7 @@ const MobileBar = ({ tab }) => {
     <div className={styles.MobileBar}>
         <div className={styles.header}>
             <HTLogo className={styles.Logo}/>
-            <div className={styles.burguer} onClick={() => setMobile(!mobile)}>
+            <div className={ clsx( styles.burguer , { [styles.burguerActive]: mobile } ) } onClick={() => setMobile(!mobile)}>
                 <span></span>
                 <span></span>
                 <span></span>

@@ -67,7 +67,7 @@
 }
 
 .icon {
-    width: 8rem;
+    width: clamp(4rem, 4vw + 1rem, 20rem);
 
     cursor: pointer;
 
@@ -159,4 +159,26 @@
 @keyframes pulse {
     from { transform: scale(1, 1); }
     to { transform: scale(2, 2); }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .mainBackground {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        padding-top: 30%;
+        height: 100vh;
+    }
+
+    .mainText {
+        text-align: center;
+    }
+
+    .bigLogo {
+        width: 60%;
+        margin-top: 10%;
+    }
 }

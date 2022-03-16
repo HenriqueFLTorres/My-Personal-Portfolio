@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 
-.introDiv h3, .highlighted, .blue {
+.introDiv h3, .highlighted {
     display: inline;
 
     color: var(--color-terciary);
@@ -28,8 +28,7 @@
     line-height: 150%;
 }
 
-.highlighted,
-.blue {
+.highlighted {
     font-size: calc(var(--step-4) + .1vw);
     color: var(--color-secondary);
     font-weight: 800;
@@ -101,4 +100,56 @@
 
 .about .highlighted {
     font-size: var(--step-1);
+}
+
+
+
+
+@media (max-width: 800px) {
+    .introDiv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .introduction {
+        height: 35%;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .introduction h3 {
+        font-size: var(--step-3);
+    }
+
+    .introduction .highlighted {
+        font-size: calc(var(--step-3) + .5vw);
+    }
+
+    .skillsIcon {
+        justify-content: center;
+        width: 100%;
+        gap: 7%;
+
+        margin-top: 15%;
+    }
+
+    .skillsIcon > * {
+        font-size: 7vw;
+    }
+
+    .about {
+        width: 100%;
+
+        padding: 0;
+        margin: 15% 0;
+    }
+
+    .about h5 {
+        text-align: center;
+    }
 }

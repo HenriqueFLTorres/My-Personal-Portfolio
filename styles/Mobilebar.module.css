@@ -25,7 +25,7 @@
     align-items: center;
 
     width: 100%;
-    height: var(--nav-height);
+    height: 10%;
 
     background-color: var(--color-secondary);
 
@@ -43,8 +43,8 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 7%;
-    height: 60%;
+    width: clamp(4.5rem, 10vw + 1rem, 7rem);
+    height: 50%;
 }
 
 .burguer span {
@@ -54,7 +54,10 @@
     height: 15%;
     border-radius: 2vw;
 
-    background-color: var(--color-terciary);
+    background-color: var(--color-primary);
+
+    transition-property: background-color, transform;
+    transition: 250ms ease;
 }
 
 
@@ -142,4 +145,17 @@
 .HideBG {
     transform: translateX(100%);
     opacity: 0;
+}
+
+
+.burguerActive span {
+    background-color: var(--color-terciary);
+}
+
+.burguerActive span:nth-child(2) {
+    transform: translateX(-15%);
+}
+
+.burguerActive span:nth-child(3) {
+    transform: translateX(-30%);
 }

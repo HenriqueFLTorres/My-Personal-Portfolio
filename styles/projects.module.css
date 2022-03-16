@@ -82,8 +82,8 @@
 
 .bigCard:first-child .imagesDisplay .arrowLeft,
 .bigCard:first-child .imagesDisplay .arrowRight {
-    width: 2vw;
-    height: 3vw;
+    width: clamp(0.1rem, 1.5vw + 1rem, 20rem);
+    height: clamp(0.1rem, 2.5vw + 1rem, 20rem);
 }
 
 .bigCard:first-child .imagesDisplay > * {
@@ -134,7 +134,7 @@
 
     cursor: pointer;
 
-    width: 2.5rem;
+    width: clamp(0.1rem, 1vw + 1rem, 15rem);
 
     filter: drop-shadow(0 0 0.1vw rgba(16, 16, 16, 0.653)) brightness(100%);
 
@@ -237,7 +237,7 @@
 }
 
 .cardInfo .head .icons > * {
-    font-size: 1.5vw;
+    font-size: clamp(0.1rem, 1vw + 1rem, 15rem);
     fill: var(--color-terciary);
 
     cursor: pointer;
@@ -387,4 +387,57 @@
 
 .seeMore h4 a:hover {
     color: rgb(172, 172, 172);
+}
+
+
+@media (max-width: 700px) {
+    .bigProjectsContainer {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 40vw;
+
+        gap: 7%;
+    }
+
+    .bigCard {
+        flex-direction: row;
+        align-items: center;
+
+        border-radius: 1.5vw;
+    }
+
+    .bigCard:first-child {
+        grid-column: span 1;
+    }
+
+    .bigCard .imagesDisplay {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .arrowLeft, .arrowRight {
+        width: clamp(0.1rem, 1.5vw + 1rem, 15rem);;
+    }
+    
+    .cardInfo {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .bigCard .cardInfo .head {
+        height: 10%;
+    }
+    
+    .bigCard .cardInfo .head h1 {
+        font-size: var(--step-1);
+    }
+    
+    .bigProjectsContainer .bigCard .cardInfo h3 {
+        font-size: var(--step-0);
+    }
+    
+    .bigProjectsContainer .bigCard .cardInfo p {
+        font-size: var(--step--1);
+        height: 60%;
+    }
 }

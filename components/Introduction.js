@@ -14,7 +14,7 @@ const Introduction = () => {
         <h3>
           Olá, eu sou<div className={styles.highlighted}> Henrique Torres</div>, <br/>
           um desenvolvedor <div className={styles.highlighted}>front-end </div>  <br/>
-          de <div className={styles.blue}>react</div>.
+          de <div className={styles.highlighted}>react</div>.
           </h3>
         <div className={styles.skillsIcon}>
           <AiFillHtml5 className={styles.htmlIcon}/>
