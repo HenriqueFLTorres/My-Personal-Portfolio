@@ -1,0 +1,145 @@
+
+.MobileBar {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: fixed;
+    z-index: 250;
+
+
+    box-shadow: 0 0 1.75rem var(--color-secondary);
+}
+
+.MobileBar .header {
+    position: absolute;
+    z-index: 150;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: var(--nav-height);
+
+    background-color: var(--color-secondary);
+
+    padding: 0 8%;
+}
+
+.Logo {
+    height: 70%;
+
+    fill: var(--color-primary);
+}
+
+.burguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 7%;
+    height: 60%;
+}
+
+.burguer span {
+    display: inline-block;
+
+    width: 100%;
+    height: 15%;
+    border-radius: 2vw;
+
+    background-color: var(--color-terciary);
+}
+
+
+
+.Navlinks,
+.Navlinks li,
+.Navlinks a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navlinks {
+    width: 50%;
+    height: 100%;
+
+    list-style: none;
+    background-color: var(--color-secondary);
+
+    box-shadow: inset 0 0 4.5vw rgb(157, 46, 46);
+    margin: auto 0;
+
+    transform: translateX(100%);
+
+    transition-property: transform;
+    transition: 350ms ease;
+}
+
+.Navlinks li {
+    width: 20rem;
+    height: var(--nav-height);
+
+    pointer-events: none;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-duration: ease;
+}
+
+
+.Navlinks a {
+    pointer-events: auto;
+
+    font-size: var(--step-0);
+    font-weight: 500;
+    width: 12rem;
+
+    transition-property: font-size, font-weight, color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--custom-ease);
+}
+
+
+
+
+.linkActive a {
+    font-weight: 700;
+    font-size: var(--step-1);
+
+    color: var(--color-terciary);
+}
+
+
+
+
+
+.Hide {
+    transform: translateX(200%);
+}
+
+.LinksBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(1vw);
+    -webkit-backdrop-filter:blur(1vw);
+    background-image: linear-gradient(180deg, rgb(223, 109, 82, 0.5), rgba(255, 255, 255, 0));
+
+    transition-property: transform, opacity;
+    transition: 350ms ease;
+}
+
+.HideBG {
+    transform: translateX(100%);
+    opacity: 0;
+}

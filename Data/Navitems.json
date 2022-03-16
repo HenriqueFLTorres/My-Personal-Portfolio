@@ -4,11 +4,15 @@
         "redirect": "/"
     },
     {
+        "title": "Introdução",
+        "redirect": "#Introduction"
+    },
+    {
         "title": "Projetos",
-        "redirect": "/projetos"
+        "redirect": "#Projects"
     },
     {
         "title": "Contato",
-        "redirect": "/contato"
+        "redirect": "#Contact"
     }
 ]

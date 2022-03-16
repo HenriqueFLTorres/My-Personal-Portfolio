@@ -6,6 +6,8 @@
   font-size: 10px;
   box-sizing: border-box;
   z-index: 50;
+
+  scroll-behavior: smooth;
 }
 
 a {
@@ -108,15 +110,23 @@ a {
 
 
 .WIP {
-  position: fixed;
-  opacity: .5;
+  display: flex;
+  justify-content: center;
 
-  right: -13.5%;
-  top: 50%;
-  
-  font-size: var(--step-0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+
+}
+
+.WIP h1 {
+  width: 100vh;
+  height: 96vw;
+  font-size: var(--step-1);
   font-weight: 600;
   color: var(--color-secondary);
 
-  transform: rotate(90deg);
+  transform-origin: center;
+  transform: rotate(90deg) translateX(-25%);
 }

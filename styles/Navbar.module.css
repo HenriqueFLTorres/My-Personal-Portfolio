@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
 
-    position: relative;
-    z-index: 100;
+    position: fixed;
+    z-index: 250;
 
     padding: 0 8%;
 
@@ -16,8 +16,6 @@
 
     box-shadow: 0 0 1.75rem var(--color-secondary);
 }
-
-
 
 .Logo {
     height: 70%;
@@ -59,7 +57,7 @@
 .Navlinks a {
     pointer-events: auto;
 
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     font-weight: 500;
     width: 12rem;
 
@@ -68,7 +66,7 @@
     transition-timing-function: var(--custom-ease);
 }
 
-.Navbar a::before {
+.Navbar .NavbarMobile a::before {
     position: absolute;
     content: '';
     
@@ -99,7 +97,7 @@
 
 .linkActive a {
     font-weight: 600;
-    font-size: var(--step-2);
+    font-size: var(--step-1);
 
     color: var(--color-terciary);
 }
@@ -111,6 +109,6 @@
 }
 
 .linkActive a:hover {
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     font-weight: 600;
 }

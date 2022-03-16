@@ -129,7 +129,7 @@
 
 .arrowLeft, .arrowRight {
     position: absolute;
-    z-index: 7;
+    z-index: 130;
     overflow: visible;
 
     cursor: pointer;

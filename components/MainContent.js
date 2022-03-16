@@ -19,9 +19,15 @@ const MainContent = () => {
           movido pela <br/> <span className={styles.highlighted}>curiosidade</span> de <span className={styles.highlighted}>aprender</span>
         </p>
         <div className={styles.icons}>
+        <a rel="noreferrer" href='github.com/HenriqueFLTorres' target='_blank'>
           <Github className={styles.icon}/>
+        </a>
+        <a rel="noreferrer" href="www.linkedin.com/in/henriquefltorres/" target="_blank">
           <LinkedIn className={styles.icon}/>
+        </a>
+        <a href='/components/Mir4ccSS1.png' target='_blank'>
           <Paper className={styles.icon}/>
+        </a>  
         </div>
       </section>
 

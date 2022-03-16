@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 
@@ -12,12 +12,8 @@ import Navitems from '../Data/Navitems.json'
 const Navbar = ({ tab }) => {
   const [selected, setSelected] = useState(tab)
 
-  const headerStyle = clsx({
-    [styles.linkActive]: selected === 0,
-    [styles.linkOff]: selected != 0,
-  });
   return (
-    <div className={styles.Navbar}>
+        <div className={styles.Navbar}>
         <HTLogo className={styles.Logo}/>
         <ul className={styles.Navlinks}>
           {Navitems.map((navLink, index) => {

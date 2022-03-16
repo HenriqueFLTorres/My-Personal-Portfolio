@@ -9,18 +9,23 @@ import { SiNextdotjs } from 'react-icons/si'
 
 const Introduction = () => {
   return (
-    <div className={styles.introDiv}>
-      <h3>
-        Olá, eu sou<div className={styles.highlighted}> Henrique Torres</div>, <br/>
-        um desenvolvedor <div className={styles.highlighted}>front-end </div>  <br/>
-        de <div className={styles.blue}>react</div>.
-        </h3>
-      <div className={styles.skillsIcon}>
-        <AiFillHtml5 className={styles.htmlIcon}/>
-        <DiCss3 className={styles.cssIcon}/>
-        <IoLogoJavascript className={styles.jsIcon}/>
-        <FaReact className={styles.reactIcon}/>
-        <SiNextdotjs className={styles.nextIcon}/>
+    <div className={styles.introDiv} id="Introduction"> 
+      <div className={styles.introduction}>
+        <h3>
+          Olá, eu sou<div className={styles.highlighted}> Henrique Torres</div>, <br/>
+          um desenvolvedor <div className={styles.highlighted}>front-end </div>  <br/>
+          de <div className={styles.blue}>react</div>.
+          </h3>
+        <div className={styles.skillsIcon}>
+          <AiFillHtml5 className={styles.htmlIcon}/>
+          <DiCss3 className={styles.cssIcon}/>
+          <IoLogoJavascript className={styles.jsIcon}/>
+          <FaReact className={styles.reactIcon}/>
+          <SiNextdotjs className={styles.nextIcon}/>
+        </div>
+      </div>
+      <div className={styles.about}>
+        <h5>Uma pessoa fascinada e <div className={styles.highlighted}>curiosa</div> sobre o mundo da <div className={styles.highlighted}>programação</div>, e mesmo com apenas alguns meses estudando, posso dizer com toda certeza que é a minha <div className={styles.highlighted}>paixão</div>.</h5>
       </div>
     </div>
   )

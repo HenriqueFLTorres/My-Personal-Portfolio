@@ -12,7 +12,7 @@ import Polygons from './Polygons'
 const contato = () => {
   let url = "www.linkedin.com/in/henriquefltorres/"
   return (
-    <div className={styles.contatoBG}>
+    <div className={styles.contatoBG} id="Contact">
         <div className={styles.contact}>
           <div className={styles.basics}>
             <a className={styles.github} rel="noreferrer" href='github.com/HenriqueFLTorres' target='_blank'>

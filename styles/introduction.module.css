@@ -1,6 +1,6 @@
 .introDiv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 
     width: 80%;
@@ -10,6 +10,12 @@
     margin-bottom: 10%;
 }
 
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .introDiv h3, .highlighted, .blue {
     display: inline;
 
@@ -17,7 +23,9 @@
     font-size: var(--step-4);
     font-weight: 700;
 
-    width: 50%;
+    width: 100%;
+
+    line-height: 150%;
 }
 
 .highlighted,
@@ -71,4 +79,26 @@
 .nextIcon:hover {
     fill: #9a9898;
     filter: drop-shadow(0 0 .15vw #1a1a1a);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    padding-left: 10%;
+}
+
+.about h5 {
+    color: var(--color-terciary);
+    font-size: var(--step-1);
+
+    line-height: 210%;
+    font-weight: 400;
+    text-align: end;
+}
+
+.about .highlighted {
+    font-size: var(--step-1);
 }

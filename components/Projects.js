@@ -9,7 +9,7 @@ import Polygons from './Polygons'
 
 const Projects = () => {
   return (
-    <div className={styles.projetosBackground}>
+    <div className={styles.projetosBackground} id="Projects">
       <Polygons/>
         <h1 className={styles.bigTitle}>Veja alguns projetos!</h1>
         <div className={styles.bigProjectsContainer}>
