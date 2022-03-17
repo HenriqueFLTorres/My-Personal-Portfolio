@@ -92,84 +92,12 @@
 
 
 
-
-
-.blurCircle {
-    width: 2vw;
-    height: 2vw;
-
-    position: absolute;
-    z-index: 0;
-
-    border-radius: 100%;
-
-    background: linear-gradient(130deg, rgb(179, 107, 71) 0%, rgb(222, 78, 83) 100%);
-    filter: blur(.4rem);
-
-    animation-name: pulse;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    opacity: 1;
-}
-
-.blurCircle:nth-of-type(1) {
-    top: 250px;
-    right: 500px;
-    animation-duration: 4s;
-}
-
-.blurCircle:nth-of-type(2) {
-    top: 120px;
-    right: 800px;
-    animation-duration: 2s;
-}
-
-.blurCircle:nth-of-type(3) {
-    top: 325px;
-    right: 1200px;
-    animation-duration: 3s;
-}
-
-.blurCircle:nth-of-type(4) {
-    top: 600px;
-    right: 900px;
-    animation-duration: 1.5s;
-}
-
-.blurCircle:nth-of-type(5) {
-    top: 900px;
-    right: 500px;
-    animation-duration: 4.5s;
-}
-
-.blurCircle:nth-of-type(6) {
-    top: 900px;
-    left: 300px;
-    animation-duration: 3.4s;
-}
-
-.blurCircle:nth-of-type(7) {
-    top: 200px;
-    left: 150px;
-    animation-duration: 2.4s;
-}
-
-
-@keyframes pulse {
-    from { transform: scale(1, 1); }
-    to { transform: scale(2, 2); }
-}
-
-
-
-
 @media (max-width: 800px) {
     .mainBackground {
         flex-direction: column-reverse;
         align-items: center;
 
-        padding-top: 30%;
+        padding-top: 15rem;
         height: 100vh;
     }
 

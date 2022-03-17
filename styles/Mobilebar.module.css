@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
 
-    display: flex;
+    display: flex ;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
@@ -11,8 +11,11 @@
     position: fixed;
     z-index: 250;
 
+    transition: height 350ms ease 350ms;
+}
 
-    box-shadow: 0 0 1.75rem var(--color-secondary);
+.barCollapse {
+    height: 8vh;
 }
 
 .MobileBar .header {
@@ -25,7 +28,7 @@
     align-items: center;
 
     width: 100%;
-    height: 10%;
+    height: clamp(0.1rem, 7vh + 1rem, 1000rem);
 
     background-color: var(--color-secondary);
 
@@ -43,8 +46,8 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: clamp(4.5rem, 10vw + 1rem, 7rem);
-    height: 50%;
+    width: clamp(4.5rem, 10vw + 1rem, 5%);
+    height: 60%;
 }
 
 .burguer span {
@@ -139,7 +142,8 @@
     background-image: linear-gradient(180deg, rgb(223, 109, 82, 0.5), rgba(255, 255, 255, 0));
 
     transition-property: transform, opacity;
-    transition: 350ms ease;
+    transition: 350ms ease, 350ms ease;
+
 }
 
 .HideBG {

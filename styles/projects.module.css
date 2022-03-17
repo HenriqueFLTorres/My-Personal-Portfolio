@@ -25,7 +25,7 @@
     grid-auto-rows: 25vw;
 
     width: 80%;
-    max-height: auto;
+    height: auto;
     margin: 0 auto;
     margin-top: 7%;
 }
@@ -207,18 +207,14 @@
     padding: 5%;
 }
 
-.cardInfo h1 {
-    font-size: var(--step-1);
-}
-
 .cardInfo .head  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    height: 20%;
+    height: auto;
+    margin-bottom: 2%;
 }
-
 
 .cardInfo .head .icons {
     display: flex;
@@ -393,6 +389,7 @@
 @media (max-width: 700px) {
     .bigProjectsContainer {
         width: 90%;
+        height: max-content;
         grid-template-columns: 1fr;
         grid-auto-rows: 40vw;
 
@@ -440,4 +437,34 @@
         font-size: var(--step--1);
         height: 60%;
     }
+
+    .seeMore {
+        width: 80%;
+        height: auto;
+
+        margin-top: 30%;
+        padding: 5%;
+        border-radius: 2vw;
+    }
+    .seeMore svg {
+        margin-bottom: 3%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .bigCard .cardInfo .head h1 {
+        font-size: var(--step-0);
+    }
+    
+    .bigProjectsContainer .bigCard .cardInfo h3 {
+        font-size: var(--step--1);
+    }
+    
+    .bigProjectsContainer .bigCard .cardInfo p {
+        font-size: var(--step--2);
+        height: 60%;
+    }
+
 }

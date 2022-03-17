@@ -7,7 +7,6 @@ import { AiFillGithub } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsDiscord } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
-import Polygons from './Polygons'
 
 const contato = () => {
   let url = "www.linkedin.com/in/henriquefltorres/"

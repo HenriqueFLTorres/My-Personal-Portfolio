@@ -1,10 +1,10 @@
 import react, { useState, useEffect } from "react"
-
 import Contacts from "../components/Contacts"
 import Introduction from "../components/Introduction"
 import MainContent from "../components/MainContent"
 import MobileBar from "../components/MobileBar"
 import Navbar from "../components/Navbar"
+import Polygons from "../components/Polygons"
 import Projects from "../components/Projects"
 
 const Home = () => {
@@ -26,7 +26,8 @@ const Home = () => {
 
 
   return (
-    <div className="MainBackground">
+    <div id="MainBG" className="MainBackground">
+      <Polygons/>
         { isMobile ? <MobileBar/> : <Navbar/> }
         <MainContent/>
         <Introduction/>

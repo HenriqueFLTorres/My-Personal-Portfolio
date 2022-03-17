@@ -19,11 +19,6 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
       setTimeout(() => {
         e.target.classList.toggle("ArrowActive")
       }, 250);
-      // e.target.firstChild.classList.add("ArrowActive")
-  
-      // setTimeout(() => {
-      //     e.target.firstChild.classList.remove("ArrowActive")
-      // }, 800);
   }
 
   return (

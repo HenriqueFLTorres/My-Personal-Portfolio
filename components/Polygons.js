@@ -26,6 +26,15 @@ const Polygons = () => {
         <Polygon1 className={styles.polygon}/>
         <Polygon2 className={styles.polygon}/>
         <Polygon3 className={styles.polygon}/>
+        <Polygon1 className={styles.polygon}/>
+        <Polygon2 className={styles.polygon}/>
+        <Polygon3 className={styles.polygon}/>
+        <Polygon1 className={styles.polygon}/>
+        <Polygon2 className={styles.polygon}/>
+        <Polygon3 className={styles.polygon}/>
+        <Polygon1 className={styles.polygon}/>
+        <Polygon2 className={styles.polygon}/>
+        <Polygon3 className={styles.polygon}/>
     </div>
   )
 }

@@ -3,11 +3,9 @@
     position: absolute;
     z-index: 0;
     width: 100%;
-    height: 100vh;
+    height: 400%;
 
-    /* overflow-y: hidden; */
-
-    transform: translateY(100%);
+    overflow-y: hidden;
 }
 
 .polygon {
@@ -27,17 +25,17 @@
 .polygon:nth-child(1) { 
     --r: rotate(159deg);
     transform: var(--r);
-    left: 32%;
-    top: -20%;
+    left: 26%;
+    top: 1%;
 
-    animation-duration: 7s;
+    animation-duration: 3.8s;
 }
 
 .polygon:nth-child(2) { 
     --r: rotate(137deg);
     transform: var(--r);
     left: 80%;
-    top: -210%;
+    top: 23%;
 
     animation-duration: 4.5s;
 }
@@ -45,8 +43,8 @@
 .polygon:nth-child(3) { 
     --r: rotate(116deg);
     transform: var(--r);
-    left: 75%;
-    top: 0%;
+    left: 48%;
+    top: 70%;
 
     animation-duration: 5.5s;
 }
@@ -55,7 +53,7 @@
     --r: rotate(87deg);
     transform: var(--r);
     left: 25%;
-    top: -180%;
+    top: 80%;
 
     animation-duration: 3.7s;
 }
@@ -64,7 +62,7 @@
     --r: rotate(250deg);
     transform: var(--r);
     left: 34%;
-    top: -40%;
+    top: 82%;
 
     animation-duration: 6s;
 }
@@ -72,7 +70,7 @@
 .polygon:nth-child(6) { 
     --r: rotate(331deg);
     transform: var(--r);
-    left: -32%;
+    left: 3%;
     top: 76%;
 
     animation-duration: 2.8s;
@@ -81,8 +79,8 @@
 .polygon:nth-child(7) { 
     --r: rotate(150deg);
     transform: var(--r);
-    left: -36%;
-    top: -150%;
+    left: -25%;
+    top: 50%;
 
     animation-duration: 3.9s;
 }
@@ -90,8 +88,8 @@
 .polygon:nth-child(8) { 
     --r: rotate(215deg);
     transform: var(--r);
-    left: -40%;
-    top: -48%;
+    left: -30%;
+    top: 88%;
 
     animation-duration: 5.5s;
 }
@@ -99,8 +97,8 @@
 .polygon:nth-child(9) { 
     --r: rotate(116deg);
     transform: var(--r);
-    left: 0%;
-    top: -250%;
+    left: -48%;
+    top: 32%;
 
     animation-duration: 5.2s;
 }
@@ -118,7 +116,7 @@
     --r: rotate(276deg);
     transform: var(--r);
     left: 19%;
-    top: -67%;
+    top: 42%;
 
     animation-duration: 3.9s;
 }
@@ -127,7 +125,7 @@
     --r: rotate(19deg);
     transform: var(--r);
     left: -60%;
-    top: -220%;
+    top: 66%;
 
     animation-duration: 3.5s;
 }
@@ -135,8 +133,8 @@
 .polygon:nth-child(13) { 
     --r: rotate(67deg);
     transform: var(--r);
-    left: -56%;
-    top: -78%;
+    left: -80%;
+    top: 71%;
 
     animation-duration: 4.2s;
 }
@@ -144,8 +142,8 @@
 .polygon:nth-child(14) { 
     --r: rotate(356deg);
     transform: var(--r);
-    left: -25%;
-    top: -150%;
+    left: -32%;
+    top: 72%;
 
     animation-duration: 3.4s;
 }
@@ -153,8 +151,8 @@
 .polygon:nth-child(15) { 
     --r: rotate(308deg);
     transform: var(--r);
-    left: 60%;
-    top: 90%;
+    left: 90%;
+    top: 80%;
 
     animation-duration: 5.2s;
 }
@@ -162,7 +160,7 @@
 .polygon:nth-child(16) { 
     --r: rotate(229deg);
     transform: var(--r);
-    left: -3%;
+    left: 27%;
     top: 22%;
 
     animation-duration: 2.2s;
@@ -172,7 +170,7 @@
     --r: rotate(13deg);
     transform: var(--r);
     left: 45%;
-    top: -95%;
+    top: 2%;
 
     animation-duration: 3.8s;
 }
@@ -185,25 +183,168 @@
 
     animation-duration: 5.2s;
 }
-/* 
-.polygon:nth-child() { 
-    transform: rotate(deg) translate(-vw, -vh);
-} */
+
+.polygon:nth-child(19) { 
+    --r: rotate(246deg);
+    transform: var(--r);
+    left: -25%;
+    top: 54%;
+
+    animation-duration: 4.2s;
+}
+
+.polygon:nth-child(20) { 
+    --r: rotate(18deg);
+    transform: var(--r);
+    left: 37%;
+    top: 52%;
+
+    animation-duration: 3.7s;
+}
+
+.polygon:nth-child(21) { 
+    --r: rotate(230deg);
+    transform: var(--r);
+    left: 46%;
+    top: 60%;
+
+    animation-duration: 3.4s;
+}
+
+.polygon:nth-child(22) { 
+    --r: rotate(158deg);
+    transform: var(--r);
+    left: 4%;
+    top: 30%;
+
+    animation-duration: 2.6s;
+}
+
+.polygon:nth-child(23) { 
+    --r: rotate(219deg);
+    transform: var(--r);
+    left: 12%;
+    top: 45%;
+
+    animation-duration: 3s;
+}
+
+.polygon:nth-child(24) { 
+    --r: rotate(353deg);
+    transform: var(--r);
+    left: 17%;
+    top: 49%;
+
+    animation-duration: 4.6s;
+}
+
+.polygon:nth-child(25) { 
+    --r: rotate(128deg);
+    transform: var(--r);
+    left: -35%;
+    top: 15%;
+
+    animation-duration: 5.2s;
+}
+
+.polygon:nth-child(26) { 
+    --r: rotate(220deg);
+    transform: var(--r);
+    left: -40%;
+    top: 40%;
+
+    animation-duration: 2.3s;
+}
+
+.polygon:nth-child(27) { 
+    --r: rotate(208deg);
+    transform: var(--r);
+    left: -29%;
+    top: 40%;
+
+    animation-duration: 3.6s;
+}
+
 
 @keyframes felldown {
     0% {
         transform: translateY(0%) scale(0, 0) var(--r);
     }
     25% {
-        transform: translateY(200%) scale(0.5, 0.5) var(--r);
+        transform: translateY(100%) scale(0.5, 0.5) var(--r);
     }
     50% {
-        transform: translateY(300%) scale(1, 1) var(--r);
+        transform: translateY(150%) scale(1, 1) var(--r);
     }
     75% {
-        transform: translateY(400%) scale(.75, .75) var(--r);
+        transform: translateY(200%) scale(.75, .75) var(--r);
     }
     100% {
-        transform: translateY(500%) scale(0, 0) var(--r);
+        transform: translateY(250%) scale(0, 0) var(--r);
+    }
+}
+
+@media (max-width: 1150px) {
+    .polygonBackground {
+        height: 380%;
+    }
+}
+
+@media (max-width: 980px) {
+    .polygonBackground {
+        height: 360%;
+    }
+}
+
+@media (max-width: 840px) {
+    .polygonBackground {
+        height: 340%;
+    }
+}
+
+@media (max-width: 700px) {
+    .polygonBackground {
+        height: 420%;
+    }
+}
+
+@media (max-width: 650px) {
+    .polygonBackground {
+        height: 400%;
+    }
+}
+
+@media (max-width: 600px) {
+    .polygonBackground {
+        height: 380%;
+    }
+}
+
+@media (max-width: 550px) {
+    .polygonBackground {
+        height: 360%;
+    }
+}
+
+@media (max-width: 470px) {
+    .polygonBackground {
+        height: 340%;
+    }
+}
+
+@media (max-width: 430px) {
+    .polygonBackground {
+        height: 320%;
+    }
+}
+
+@media (max-width: 360px) {
+    .polygonBackground {
+        height: 300%;
+    }
+}
+@media (max-width: 300px) {
+    .polygonBackground {
+        height: 280%;
     }
 }

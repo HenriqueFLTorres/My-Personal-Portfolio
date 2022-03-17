@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 
 
@@ -14,7 +14,7 @@ const MobileBar = ({ tab }) => {
 
 
   return (
-    <div className={styles.MobileBar}>
+    <div className={ clsx( styles.MobileBar , { [styles.barCollapse]: !mobile } ) }>
         <div className={styles.header}>
             <HTLogo className={styles.Logo}/>
             <div className={ clsx( styles.burguer , { [styles.burguerActive]: mobile } ) } onClick={() => setMobile(!mobile)}>

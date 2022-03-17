@@ -63,14 +63,12 @@ a {
   user-select: none;
   pointer-events: none;
 
-  opacity: 1;
 
   width: 100%;
-  height: 60%;
+  height: 100%;
 
-
-  border-top-left-radius: .5vw;
-  border-top-right-radius: .5vw;
+  /* border-top-left-radius: .5vw;
+  border-top-right-radius: .5vw; */
 
   transition-property: transform, opacity;
   transition-duration: 250ms, 500ms;
@@ -133,11 +131,17 @@ a {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 450px) {
 
-  .image {
-    width: 50%;
-    height: 100%;
+  :root {
+    --step--2: clamp(0.48rem, calc(0.13rem + 0.92vw), 0.26rem);
+    --step--1: clamp(0.60rem, calc(0.15rem + 1.21vw), 0.31rem);
+    --step-0: clamp(0.38rem, calc(0.16rem + 1.58vw), 0.75rem);
+    --step-1: clamp(0.45rem, calc(0.17rem + 2.05vw), 0.94rem);
+    --step-2: clamp(0.54rem, calc(0.17rem + 2.66vw), 1.17rem);
+    --step-3: clamp(0.65rem, calc(0.18rem + 3.44vw), 1.47rem);
+    --step-4: clamp(0.78rem, calc(0.17rem + 4.44vw), 1.83rem);
+    --step-5: clamp(0.93rem, calc(0.15rem + 5.71vw), 2.29rem);
   }
 
 }

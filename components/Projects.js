@@ -5,12 +5,10 @@ import bigProjects from '../Data/bigProjects.json'
 
 import styles from '../styles/projects.module.css'
 import { FaGithubSquare } from 'react-icons/fa'
-import Polygons from './Polygons'
 
 const Projects = () => {
   return (
     <div className={styles.projetosBackground} id="Projects">
-      <Polygons/>
         <h1 className={styles.bigTitle}>Veja alguns projetos!</h1>
         <div className={styles.bigProjectsContainer}>
           {bigProjects.map((project, index) => {

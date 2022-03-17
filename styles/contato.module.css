@@ -108,7 +108,7 @@
 }
 
 .emailIcon {
-    font-size: 20vh;
+    font-size: clamp(0.1rem, 12vw + 1rem, 500rem);
     width: 45%;
 
     fill: var(--color-terciary);
@@ -148,4 +148,60 @@
 
 .info a:hover {
     filter: drop-shadow(0 0 .5vw var(--color-secondary));
+}
+
+
+
+
+@media (max-width: 700px) {
+    .contact {
+        height: auto;
+
+        margin-top: 10%;
+    }
+
+    .basics {
+        grid-template-columns: 90%;
+        grid-auto-rows: auto;
+        height: auto;
+    }
+
+    .basics > * {
+        padding: 3%;
+    }
+
+    .basics > * svg {
+        margin-bottom: 10%;
+    }
+
+    .basics > * h1 {
+        font-size: var(--step-2);
+    }
+
+    .basics > * h4 {
+        font-size: var(--step-0);
+    }
+
+
+    .sendEmail {
+        width: 90%;
+        height: auto;
+
+        margin-top: 25%;
+        padding-block: 5%;
+    }
+
+    .emailIcon {
+        font-size: 25vw;
+    }
+
+    .info {
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .info a {
+        font-size: var(--step--1);
+    }
+
 }

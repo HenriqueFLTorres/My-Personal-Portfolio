@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 import styles from '../styles/MainContent.module.css'
 import HTLogo from '../SVG/HTLogo'
@@ -30,15 +29,6 @@ const MainContent = () => {
         </a>  
         </div>
       </section>
-
-      <div className={styles.blurCircle}></div>
-      <div className={styles.blurCircle}></div>
-      <div className={styles.blurCircle}></div>
-      <div className={styles.blurCircle}></div>
-      <div className={styles.blurCircle}></div>
-      <div className={styles.blurCircle}></div>
-      <div className={styles.blurCircle}></div>
-
     </div>
   )
 }
