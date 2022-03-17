@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div id="MainBG" className="MainBackground">
       <Polygons/>
-        { isMobile ? <MobileBar/> : <Navbar/> }
+        { !isMobile ? <MobileBar/> : <Navbar/> }
         <MainContent/>
         <Introduction/>
         {/* <About/> */}
