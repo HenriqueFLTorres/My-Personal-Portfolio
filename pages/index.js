@@ -8,7 +8,8 @@ import Polygons from "../components/Polygons"
 import Projects from "../components/Projects"
 
 const Home = () => {
-  const [width, setWidth] = useState(null);
+  const getInitialWidth = async() => window.innerWidth
+  const [width, setWidth] = useState(getInitialWidth);
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -28,7 +29,7 @@ const Home = () => {
   return (
     <div id="MainBG" className="MainBackground">
       <Polygons/>
-        { !isMobile ? <MobileBar/> : <Navbar/> }
+        { isMobile ? <MobileBar/> : <Navbar/> }
         <MainContent/>
         <Introduction/>
         {/* <About/> */}
