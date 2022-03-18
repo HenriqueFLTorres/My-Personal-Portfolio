@@ -7,8 +7,12 @@ import clsx from 'clsx'
 
 import HTLogo from '../SVG/HTLogo'
 import Navitems from '../Data/Navitems.json'
+import NavitemsEN from '../Data/NavitemsEN.json'
 
-const MobileBar = ({ tab }) => {
+import Brazil from '../SVG/Brazil.js'
+import USA from '../SVG/USA.js'
+
+const MobileBar = ({ tab, lang }) => {
     const [selected, setSelected] = useState(tab)
     const [mobile, setMobile] = useState(false)
 
@@ -25,7 +29,7 @@ const MobileBar = ({ tab }) => {
         </div>
         <div className={ clsx( styles.LinksBG , { [styles.HideBG]: !mobile } ) } onClick={() => setMobile(false)} >
             <ul className={ clsx( styles.Navlinks , { [styles.Hide]: !mobile } ) }>
-            {Navitems.map((navLink, index) => {
+            {( lang === "en" ? NavitemsEN : Navitems).map((navLink, index) => {
                 const { title, redirect } = navLink
                 return (
                 <li key={index} className={clsx({ [styles.linkActive]: selected === index })}>
@@ -35,8 +39,23 @@ const MobileBar = ({ tab }) => {
                 </li>
                 )
             })}
+
+            <div className={styles.language}>
+                <Link href="/">
+                    <div className={ clsx({ [styles.FlagActive]: lang !== "en", [styles.Flag]: lang === "en" }) }>
+                            <Brazil className={styles.Icon}/>
+                    </div>
+                </Link>
+                <Link href="/en">
+                    <div className={ clsx({ [styles.FlagActive]: lang === "en", [styles.Flag]: lang !== "en" }) }>
+                        <USA className={styles.Icon}/>
+                    </div>
+                </Link>
+            </div>
             </ul>
+            
         </div>
+        
 
     </div>
   )

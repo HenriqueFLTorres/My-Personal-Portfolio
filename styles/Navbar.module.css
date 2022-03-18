@@ -37,6 +37,7 @@
 .Navlinks {
 
     list-style: none;
+    margin-left: auto;
 }
 
 .Navlinks li {
@@ -111,4 +112,55 @@
 .linkActive a:hover {
     font-size: var(--step-0);
     font-weight: 600;
+}
+
+
+
+
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10%;
+
+    height: 80%;
+    width: 10%;
+}
+
+.language > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 80%;
+    background-color: var(--color-primary);
+    border-radius: .25vw;
+
+    transition: transform 350ms ease, background-color 350ms ease;
+}
+
+.language .Icon {
+    width: 70%;
+    height: auto;
+    filter: grayscale(100%);
+
+    transition: filter 350ms ease;
+}
+
+.Flag:hover, .FlagActive:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.FlagActive {
+    background-color: var(--color-terciary);
+    cursor: pointer;
+}
+
+.FlagActive .Icon {
+    filter: grayscale(0);
 }

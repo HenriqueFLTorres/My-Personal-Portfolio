@@ -163,3 +163,55 @@
 .burguerActive span:nth-child(3) {
     transform: translateX(-30%);
 }
+
+
+
+
+.language {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10%;
+
+    margin-top: 15%;
+
+    width: 80%;
+    height: 15%;
+}
+
+.language > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 40%;
+    background-color: var(--color-primary);
+    border-radius: .25vw;
+
+    transition: transform 350ms ease, background-color 350ms ease;
+}
+
+.language .Icon {
+    height: 60%;
+    width: auto;
+    filter: grayscale(100%);
+
+    transition: filter 350ms ease;
+}
+
+.Flag:hover, .FlagActive:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.FlagActive {
+    background-color: var(--color-terciary);
+    cursor: pointer;
+}
+
+.FlagActive .Icon {
+    filter: grayscale(0);
+}
