@@ -9,22 +9,21 @@ import { BsDiscord } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
 
 const contato = () => {
-  let url = "www.linkedin.com/in/henriquefltorres/"
   return (
     <div className={styles.contatoBG} id="Contact">
         <div className={styles.contact}>
           <div className={styles.basics}>
-            <a className={styles.github} rel="noreferrer" href='github.com/HenriqueFLTorres' target='_blank'>
+            <a className={styles.github} rel="noreferrer" href='https://github.com/HenriqueFLTorres' target='_blank'>
               <AiFillGithub />
               <h1>Github</h1>
               <h4>github.com/HenriqueFLTorres</h4>
             </a>
-            <a className={styles.linkedIn} rel="noreferrer" href="www.linkedin.com/in/henriquefltorres/" target="_blank">
+            <a className={styles.linkedIn} rel="noreferrer" href="https://www.linkedin.com/in/henriquefltorres/" target="_blank">
               <BsLinkedin/>
               <h1>LinkedIn</h1>
               <h4>linkedin.com/in/henriquefltorres/</h4>
             </a>
-            <a className={styles.discord} rel="noreferrer" href="discord.com/users/514829262902132754" target='_blank'>
+            <a className={styles.discord} rel="noreferrer" href='https://www.discord.com/users/514829262902132754' target="_blank">
               <BsDiscord/>
               <h1>Discord</h1>
               <h4>Treffy#4964</h4>

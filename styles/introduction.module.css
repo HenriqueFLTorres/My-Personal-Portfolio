@@ -6,8 +6,12 @@
     width: 80%;
     height: 60vh;
 
-    margin: 5% auto;
-    margin-bottom: 10%;
+    margin: 0 auto;
+}
+
+.marginTop {
+    padding-top: 15%;
+    width: 100%;
 }
 
 .introduction {

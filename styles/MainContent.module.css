@@ -5,10 +5,10 @@
     flex-direction: row;
     
     width: 100%;
-    height: 90vh;
+    height: auto;
 
     padding: 7% 5%;
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 .bigLogo {

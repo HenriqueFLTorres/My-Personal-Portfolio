@@ -9,6 +9,11 @@
     /* background: linear-gradient(125deg, rgba(36,36,36,1) 0%, rgba(19,19,19,1) 100%); */
 }
 
+.marginTop {
+    padding-top: 10%;
+    width: 100%; 
+}
+
 .bigTitle {
     font-size: var(--step-3);
     color: var(--color-secondary);
@@ -52,8 +57,8 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 60%;
-    max-width: 100%;
+    height: 50%;
+    width: 100%;
     gap: 50%;
 
     border-top-left-radius: .5vw;
@@ -159,17 +164,20 @@
 
 
 
-
+.bigCard:first-child .imageView {
+    width: 100%;
+    height: auto;
+}
 
 
 .imageView {
     position: absolute;
     z-index: 5;
 
+    object-fit: contain;
     width: 100%;
-    height: auto;
-
-    box-shadow: 0 0 .5vw;
+    height: 100%;
+    padding-block: 2%;
 
 
     transition-property: opacity;
@@ -202,7 +210,7 @@
 
     color: var(--color-terciary);
 
-    height: 40%;
+    height: 50%;
 
     padding: 5%;
 }
@@ -221,7 +229,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: auto;
     gap: 20%;
 }
 
@@ -233,7 +241,7 @@
 }
 
 .cardInfo .head .icons > * {
-    font-size: clamp(0.1rem, 1vw + 1rem, 15rem);
+    font-size: clamp(0.1rem, .5vw + 1rem, 15rem);
     fill: var(--color-terciary);
 
     cursor: pointer;
@@ -251,14 +259,18 @@
     fill: var(--color-secondary);
 }
 
+.cardInfo h1 {
+    font-size: var(--step-0);
+}
+
 .cardInfo h3 {
     color: rgb(211, 211, 211);
-    font-size: var(--step--2);
+    font-size: var(--step--1);
     font-weight: 400;
 }
 
 .cardInfo p {
-    font-size: var(--step--2);
+    font-size: var(--step--1);
     margin-block: auto;
 }
 
@@ -285,6 +297,9 @@
     font-size: var(--step-0);
 }
 
+.bigCard:first-child .cardInfo .head .icons > * { 
+    font-size: clamp(0.1rem, 1vw + 1rem, 15rem);
+}
 
 
 
@@ -299,7 +314,7 @@
 
 .tags > * {
     background-color: var(--color-secondary);
-    font-size: calc(.3vw + .3rem);
+    font-size: calc(.4vw + .3rem);
 
     box-shadow: 0 0 .5vw #df6c52c1;
 
