@@ -34,7 +34,7 @@ const en = () => {
           <MainContent lang="en"/>
           <Introduction lang="en"/>
           <Projects lang="en"/>
-          <Contacts/>
+          <Contacts lang="en"/>
       </div>
     )
   }

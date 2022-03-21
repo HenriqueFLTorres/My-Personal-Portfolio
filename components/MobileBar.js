@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 import styles from '../styles/Mobilebar.module.css'
@@ -9,8 +10,8 @@ import HTLogo from '../SVG/HTLogo'
 import Navitems from '../Data/Navitems.json'
 import NavitemsEN from '../Data/NavitemsEN.json'
 
-import Brazil from '../SVG/Brazil.js'
-import USA from '../SVG/USA.js'
+import Brazil from '../Images/Brazil.png'
+import Usa from '../Images/USA.png'
 
 const MobileBar = ({ tab, lang }) => {
     const [selected, setSelected] = useState(tab)
@@ -43,12 +44,12 @@ const MobileBar = ({ tab, lang }) => {
             <div className={styles.language}>
                 <Link href="/">
                     <div className={ clsx({ [styles.FlagActive]: lang !== "en", [styles.Flag]: lang === "en" }) }>
-                            <Brazil className={styles.Icon}/>
+                        <Image src={Brazil} alt="eng" width={80} height={80} className={styles.Icon}/>
                     </div>
                 </Link>
                 <Link href="/en">
                     <div className={ clsx({ [styles.FlagActive]: lang === "en", [styles.Flag]: lang !== "en" }) }>
-                        <USA className={styles.Icon}/>
+                        <Image src={Usa} alt="eng" width={80} height={80} className={styles.Icon}/>
                     </div>
                 </Link>
             </div>

@@ -8,7 +8,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { BsDiscord } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
 
-const contato = () => {
+const contato = ({ lang }) => {
   return (
     <div className={styles.contatoBG} id="Contact">
         <div className={styles.contact}>
@@ -34,7 +34,7 @@ const contato = () => {
             <SiGmail className={styles.emailIcon}/>
             <div className={styles.info}>
               <h1>Gmail</h1>
-              <a href="mailto:henriquefltorres@gmail.com" target="_blank" className={styles.emailButton}>Envie um Email</a>
+              <a href="mailto:henriquefltorres@gmail.com" target="_blank" className={styles.emailButton}>{ lang === "en" ? "Send an Email" : "Envie um Email" }</a>
             </div>
             
           </div>

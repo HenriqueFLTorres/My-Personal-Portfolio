@@ -3,28 +3,28 @@
         "title": "Mir4 Crafting Calculator",
         "github": "https://github.com/HenriqueFLTorres/Mir4-CraftingCalculator",
         "linkWeb": "https://mir4cc.netlify.app/",
-        "date": "08/03/22",
+        "date": "03/08/22",
         "images": [ "https://i.imgur.com/kFUrjL9.png", "https://i.imgur.com/uUD0vMH.png", "https://i.imgur.com/39rweQj.png", "https://i.imgur.com/wTrHRWG.png" ],
-        "description": "De longe, o projeto que me da mais orgulho, simplismente por ser o mais desafiador e de maior utilidade possível. Ainda me lembro do prazer de fazer isto funcionar, definitivamente vou continuar atualizando",
+        "description": "The biggest and most challenging project I have ever done, I am constantly updating it and today after a lot of headache I am proud to have it done",
         "technologies": [ "HTML", "CSS", "REACT", "🧠" ],
         "changelog": "A cool change this morning \n lets fix it right now"
     },
     {
         "title": "Personal Portfolio",
         "github": "https://github.com/HenriqueFLTorres/portfolio",
-        "linkWeb": "https://htportfolio.vercel.app/",
-        "date": "17/03/22",
+        "linkWeb": "https://htportfolio.vercel.app/en",
+        "date": "03/17/22",
         "images": [ "https://i.imgur.com/trGBc5E.png", "https://i.imgur.com/Z84eL4b.png", "https://i.imgur.com/1o1ZJVq.png", "https://media0.giphy.com/media/gVkQmYGazJKap17Aft/giphy.gif?cid=790b761197a16f81c5a29dfb6fda692f923994c8cf71c482&rid=giphy.gif&ct=g" ],
-        "description": "Meu primeiro projeto usando NextJS, embora tenha muito a se melhorar o resultado me agradou. Há muito trabalho ainda há ser feito...",
+        "description": "My first project using NextJS, although it has a lot to improve, the result pleases me, but there is still a lot of work to be done...",
         "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
     },
     {
         "title": "Quick Fretes Website",
         "github": "https://github.com/HenriqueFLTorres/QuickFretesWebsite",
         "linkWeb": "https://quickfretes.netlify.app/",
-        "date": "23/02/22",
+        "date": "02/23/22",
         "images": [ "https://i.imgur.com/jRLkliF.png", "https://i.imgur.com/UhQPkmi.png", "https://i.imgur.com/XQTV3Hp.png", "https://i.imgur.com/2j5FcOL.png" ],
-        "description": "Um website de uma pequena empresa de mudanças, ainda há um grande desafio a ser implementado e concerteza não vou deixar o projeto de lado",
+        "description": "A website for a small moving company, there is still a big challenge to be implemented and I will certainly not leave the project aside.",
         "technologies": [ "HTML", "CSS", "REACT" ]
     }
 ]
