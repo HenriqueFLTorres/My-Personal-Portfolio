@@ -10,13 +10,13 @@
   ### Here are some previews 🖥️
   <br/><br/><br/>
   <p align="center">
-    <img width="40%" src="https://i.imgur.com/kFUrjL9.png">
-    <img width="40%" src="https://i.imgur.com/uUD0vMH.png">
+    <img width="40%" src="https://i.imgur.com/Z84eL4b.png">
+    <img width="40%" src="https://i.imgur.com/trGBc5E.png">
     <br/><br/>
-    <img width="80%" src="https://i.imgur.com/39rweQj.png">
+    <img width="80%" src="https://i.imgur.com/rEyrXSn.png">
     <br/><br/>
-    <img width="40%" src="https://i.imgur.com/c8044SE.png">
-    <img width="40%" src="https://i.imgur.com/ab4ywBl.png">
+    <img width="40%" src="https://i.imgur.com/eirKziX.png">
+    <img width="40%" src="https://i.imgur.com/GUo7nxa.png">
   </p>
   
 <br/><br/>
