@@ -1,14 +1,15 @@
 
 .mainBackground {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     
-    width: 100%;
+    width: clamp(0.1rem, 80vw + 1rem, 1000rem);
     height: auto;
+    margin: 0 auto;
 
-    padding: 7% 5%;
-    padding-top: 12%;
+    gap: 15vw;
+    padding-top: 20vh;
 }
 
 .bigLogo {
@@ -17,7 +18,7 @@
     position: relative;
     z-index: 3;
 
-    height: 60vh;
+    width: 70%;
 }
 
 
@@ -30,8 +31,8 @@
     position: relative;
     z-index: 3;
 
-    height: 60vh;
     width: 50%;
+    width: auto;
 
     color: var(--color-terciary);
 
@@ -90,8 +91,6 @@
     fill: var(--color-secondary);
 }
 
-
-
 @media (max-width: 800px) {
     .mainBackground {
         flex-direction: column-reverse;
@@ -103,6 +102,10 @@
 
     .mainText {
         text-align: center;
+    }
+
+    .textSection {
+        gap: 15vh;
     }
 
     .bigLogo {

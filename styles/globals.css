@@ -64,7 +64,7 @@ a {
   pointer-events: none;
 
   width: 100%;
-  height: 100%;
+  height: 52.15%;
   /* border-top-left-radius: .5vw;
   border-top-right-radius: .5vw; */
 
@@ -102,7 +102,18 @@ a {
 
 
 
-
+@media (min-width: 2000px) {
+  :root {
+    --step--2: clamp(1.28rem, calc(0.81rem + 0.62vw), 0.96rem);
+    --step--1: clamp(1.60rem, calc(0.94rem + 0.86vw), 1.15rem);
+    --step-0: clamp(1.38rem, calc(1.09rem + 1.18vw), 2.00rem);
+    --step-1: clamp(1.65rem, calc(1.26rem + 1.61vw), 2.50rem);
+    --step-2: clamp(1.98rem, calc(1.45rem + 2.17vw), 3.13rem);
+    --step-3: clamp(2.38rem, calc(1.67rem + 2.90vw), 3.91rem);
+    --step-4: clamp(2.85rem, calc(1.92rem + 3.85vw), 4.88rem);
+    --step-5: clamp(3.42rem, calc(2.19rem + 5.09vw), 6.10rem);
+  }
+}
 
 @media (max-width: 1200px) {
   :root {
@@ -128,6 +139,10 @@ a {
     --step-4: clamp(1.04rem, calc(0.62rem + 4.16vw), 2.44rem);
     --step-5: clamp(1.24rem, calc(0.71rem + 5.36vw), 3.05rem);
   }
+  .image {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 
@@ -144,6 +159,21 @@ a {
     --step-5: clamp(0.93rem, calc(0.15rem + 5.71vw), 2.29rem);
   }
 
+}
+
+
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  :root {
+    --step--2: clamp(0.48rem, calc(0.13rem + 0.92vw), 0.26rem);
+    --step--1: clamp(0.60rem, calc(0.15rem + 1.21vw), 0.31rem);
+    --step-0: clamp(0.38rem, calc(0.16rem + 1.58vw), 0.75rem);
+    --step-1: clamp(0.45rem, calc(0.17rem + 2.05vw), 0.94rem);
+    --step-2: clamp(0.54rem, calc(0.17rem + 2.66vw), 1.17rem);
+    --step-3: clamp(0.65rem, calc(0.18rem + 3.44vw), 1.47rem);
+    --step-4: clamp(0.78rem, calc(0.17rem + 4.44vw), 1.83rem);
+    --step-5: clamp(0.93rem, calc(0.15rem + 5.71vw), 2.29rem);
+  }
 }
 
 

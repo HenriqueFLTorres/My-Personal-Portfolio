@@ -59,9 +59,9 @@ const BigProjectCard = ({ title, date, images, description, technologies, github
         <div className={styles.head}>
           <h1>{title}</h1>
           <div className={styles.icons}>
-            <FaGithubSquare href={github} target="_blank" />
+            <a href={github} target="_blank"><FaGithubSquare/></a>
           { linkWeb && 
-            <BsLink45Deg href={linkWeb} target="_blank" />
+            <a href={linkWeb} target="_blank" ><BsLink45Deg/></a>
           }
           </div>
         </div>

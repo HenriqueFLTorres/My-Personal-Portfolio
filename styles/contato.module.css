@@ -117,11 +117,12 @@
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
+    gap: 2.5vh;
     width: 45%;
-    height: 80%;
+    /* height: 80%; */
 }
 
 .info h1 {
@@ -197,11 +198,25 @@
 
     .info {
         justify-content: space-between;
-        height: 100%;
     }
 
     .info a {
         font-size: var(--step--1);
     }
 
+}
+
+
+@media (max-width: 300px) {
+    .contatoBG {
+        min-height: 0;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 230px) {
+    .contatoBG {
+        min-height: 0;
+        height: 60vh;
+    }
 }

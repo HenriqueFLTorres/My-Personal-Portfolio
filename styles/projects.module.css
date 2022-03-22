@@ -192,13 +192,12 @@
     width: 100%;
 
     opacity: 0.5;
-    filter: blur(0.4vw);
+    filter: blur(.4vw);
 
     transition-property: filter, opacity;
     transition-duration: 0.8s;
     transition-timing-function: ease;
 }
-
 
 
 
@@ -232,14 +231,14 @@
     gap: 20%;
 }
 
-.icons > * path {
+.icons > a > * path {
     fill: var(--color-terciary);
 
     transition-property: fill;
     transition: 250ms ease;
 }
 
-.cardInfo .head .icons > * {
+.cardInfo .head .icons > a > * {
     font-size: clamp(0.1rem, .5vw + 1rem, 15rem);
     fill: var(--color-terciary);
 
@@ -249,12 +248,12 @@
     transition: 250ms ease;
 }
 
-.cardInfo .head .icons > *:hover {
+.cardInfo .head .icons > a > *:hover {
     transform: scale(1.3, 1.3);
     filter: drop-shadow(0 0 .1vw var(--color-secondary));
 }
 
-.cardInfo .head .icons > *:hover path {
+.cardInfo .head .icons > a > *:hover path {
     fill: var(--color-secondary);
 }
 
@@ -402,37 +401,55 @@
 
 @media (max-width: 700px) {
     .bigProjectsContainer {
-        width: 90%;
+        width: 70%;
         height: max-content;
         grid-template-columns: 1fr;
-        grid-auto-rows: 40vw;
+        grid-auto-rows: 50vh;
 
-        gap: 7%;
+        gap: 5%;
     }
 
     .bigCard {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        width: 100%;
 
         border-radius: 1.5vw;
     }
 
     .bigCard:first-child {
         grid-column: span 1;
+        flex-direction: column;
     }
 
-    .bigCard .imagesDisplay {
-        width: 50%;
-        height: 100%;
+    .bigCard:first-child .imagesDisplay > * {
+        width: 100%;
+        height: 50%;
+    }
+
+    .bigCard:first-child .imagesDisplay .imageView {
+        object-fit: cover;
+        perspective: 16 / 9;
+        max-height: 100%;
+        width: auto;
+    }
+
+    .bigCard .imagesDisplay,
+    .bigCard:first-child .imagesDisplay {
+        width: 100%;
+        height: 50%;
     }
     
     .arrowLeft, .arrowRight {
         width: clamp(0.1rem, 1.5vw + 1rem, 15rem);;
     }
+
     
-    .cardInfo {
-        width: 50%;
-        height: 100%;
+    .cardInfo,
+    .bigCard:first-child .cardInfo {
+        width: 100%;
+        height: 50%;
+        padding: 5%;
     }
     
     .bigCard .cardInfo .head {
@@ -456,7 +473,7 @@
         width: 80%;
         height: auto;
 
-        margin-top: 30%;
+        margin-top: 50%;
         padding: 5%;
         border-radius: 2vw;
     }
@@ -481,6 +498,13 @@
         height: 60%;
     }
 
+    .bigCard:first-child .imagesDisplay .imageView {
+        object-fit: cover;
+        perspective: 16 / 9;
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 340px) {
@@ -498,4 +522,12 @@
         height: 60%;
     }
 
+}
+
+
+
+@media (max-width: 700px) and (orientation: landscape) {
+    .bigProjectsContainer {
+        grid-auto-rows: 50vw;
+    }
 }

@@ -41,7 +41,7 @@
 }
 
 .Navlinks li {
-    width: 20rem;
+    width: clamp(0.1rem, 12.5vw + 1rem, 25rem);
     height: var(--nav-height);
 
     pointer-events: none;
@@ -166,4 +166,20 @@
 
 .FlagActive .Icon {
     filter: grayscale(0);
+}
+
+@media (min-width: 2000px) {
+    .Navbar {
+        height: 10vh;
+        padding-inline: 20vw;
+    }
+    .Navlinks {
+        margin-right: 2.5%;
+    }
+    .Navlinks a {
+        font-size: var(--step-1);
+    }
+    .language {
+        width: 20%;
+    }
 }
