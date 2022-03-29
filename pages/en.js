@@ -29,6 +29,11 @@ const en = () => {
   
     return (
       <div id="MainBG" className="MainBackground">
+          <Head>
+            <title>Henrique Torres</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="icon" href="/Logo.png"></link>
+          </Head>
           <Polygons/>
           { isMobile ? <MobileBar lang="en"/> : <Navbar lang="en"/> }
           <MainContent lang="en"/>
