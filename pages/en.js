@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 
+import Head from "next/head"
+
 import Contacts from "../components/Contacts"
 import Introduction from "../components/Introduction"
 import MainContent from "../components/MainContent"

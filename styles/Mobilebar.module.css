@@ -188,15 +188,17 @@
 
     height: 50%;
     width: 40%;
-    background-color: var(--color-primary);
+    box-shadow: 0 0 .5vw rgb(33, 33, 33);
+    background-image: linear-gradient(155deg, rgba(55, 55, 55, 0.72), rgba(51, 30, 25, 0.857));
+    padding: 10%;
     border-radius: .25vw;
 
     transition: transform 350ms ease, background-color 350ms ease;
 }
 
 .language .Icon {
-    height: 60%;
-    width: auto;
+    width: 20px;
+    height: 20px;
     filter: grayscale(100%);
 
     transition: filter 350ms ease;
@@ -208,14 +210,15 @@
 }
 
 .FlagActive {
-    background-color: var(--color-terciary);
+    box-shadow: 0 0 .5vw rgb(255, 255, 255);
+    background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.72), rgba(223, 130, 110, 0.857));
+    border-radius: .3vw;
     cursor: pointer;
 }
 
 .FlagActive .Icon {
     filter: grayscale(0);
 }
-
 
 
 @media (max-width: 1000px) and (orientation: landscape) {

@@ -19,12 +19,12 @@
         "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
     },
     {
-        "title": "Quick Fretes Website",
-        "github": "https://github.com/HenriqueFLTorres/QuickFretesWebsite",
-        "linkWeb": "https://quickfretes.netlify.app/",
-        "date": "02/23/22",
-        "images": [ "https://i.imgur.com/jRLkliF.png", "https://i.imgur.com/UhQPkmi.png", "https://i.imgur.com/XQTV3Hp.png", "https://i.imgur.com/2j5FcOL.png" ],
-        "description": "A website for a small moving company, there is still a big challenge to be implemented and I will certainly not leave the project aside.",
-        "technologies": [ "HTML", "CSS", "REACT" ]
+        "title": "EzEcommerce Fake Website",
+        "github": "https://github.com/HenriqueFLTorres/EzEcommerce-FakeWebsite",
+        "linkWeb": "https://ezecommerce.vercel.app/",
+        "date": "03/29/22",
+        "images": [ "https://i.imgur.com/CmiX6g9.png", "https://i.imgur.com/w6txGeD.png", "https://i.imgur.com/UKmxlS4.png", "https://i.imgur.com/17ODvzt.png", "https://i.imgur.com/81JNzle.png", "https://i.imgur.com/Pth8tLW.png" ],
+        "description": "A website of a fictional company, based on Amazon, with a modern design using modern technologies. Like every project, it still needs polishing. Follow my progress on Github!",
+        "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
     }
 ]

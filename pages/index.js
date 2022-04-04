@@ -16,6 +16,7 @@ const Home = () => {
   const handleWindowSizeChange = async() => {
       setWidth(window.innerWidth);
   }
+  
   useEffect(() => {
     setWidth(window.innerWidth)
       window.addEventListener('resize', handleWindowSizeChange);
