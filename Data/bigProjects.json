@@ -5,7 +5,7 @@
         "linkWeb": "https://mir4cc.netlify.app/",
         "date": "08/03/22",
         "images": [ "https://i.imgur.com/kFUrjL9.png", "https://i.imgur.com/uUD0vMH.png", "https://i.imgur.com/39rweQj.png", "https://i.imgur.com/wTrHRWG.png" ],
-        "description": "De longe, o projeto que me da mais orgulho, simplismente por ser o mais desafiador e de maior utilidade possível. Ainda me lembro do prazer de fazer isto funcionar, definitivamente vou continuar atualizando",
+        "description": "Aproveitando recursos como armazenamento local e gerenciamento de estado, o React possibilitou a comunicação entre os diferentes componentes da página, facilitando futuras implementações de features como temas, filtros e linguagens",
         "technologies": [ "HTML", "CSS", "REACT", "🧠" ],
         "changelog": "A cool change this morning \n lets fix it right now"
     },
@@ -15,7 +15,7 @@
         "linkWeb": "https://htportfolio.vercel.app/",
         "date": "17/03/22",
         "images": [ "https://i.imgur.com/trGBc5E.png", "https://i.imgur.com/Z84eL4b.png", "https://i.imgur.com/1o1ZJVq.png", "https://media0.giphy.com/media/gVkQmYGazJKap17Aft/giphy.gif?cid=790b761197a16f81c5a29dfb6fda692f923994c8cf71c482&rid=giphy.gif&ct=g" ],
-        "description": "Meu primeiro projeto usando NextJS, embora tenha muito a se melhorar o resultado me agradou. Há muito trabalho ainda há ser feito...",
+        "description": "Usando React e Next.js, foi possivel desenvolver um site de multipla linguagem para diferentes tipos de dispositivos, usando um código flexível e layout responsivo com componentes reutilizáveis e uma arquitetura limpa.",
         "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
     },
     {
@@ -24,7 +24,7 @@
         "linkWeb": "https://ezecommerce.vercel.app/",
         "date": "29/03/22",
         "images": [ "https://i.imgur.com/CmiX6g9.png", "https://i.imgur.com/w6txGeD.png", "https://i.imgur.com/UKmxlS4.png", "https://i.imgur.com/17ODvzt.png", "https://i.imgur.com/81JNzle.png", "https://i.imgur.com/Pth8tLW.png" ],
-        "description": "Um website de uma empresa fictícia, baseado na Amazon, com um design moderno utilizando tecnologias modernas. Como todo projeto, ele ainda precisa de polimento. Acompanhe meu progesso pelo Github!",
+        "description": "Conforme necessário para um site de eCommerce, várias páginas e componentes devem se comunicar uns com os outros, fazendo com que React e Next.js sejam a combinação perfeita. Aproveitando de funcionalidades como roteamento e o gerenciamento de estado, foram possíveis realizar conexão entre vários componentes e dados.",
         "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
     }
 ]
