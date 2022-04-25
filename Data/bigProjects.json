@@ -1,30 +1,62 @@
 [
-    {
-        "title": "Mir4 Crafting Calculator",
-        "github": "https://github.com/HenriqueFLTorres/Mir4-CraftingCalculator",
-        "linkWeb": "https://mir4cc.netlify.app/",
-        "date": "08/03/22",
-        "images": [ "https://i.imgur.com/kFUrjL9.png", "https://i.imgur.com/uUD0vMH.png", "https://i.imgur.com/39rweQj.png", "https://i.imgur.com/wTrHRWG.png" ],
-        "description": "Aproveitando recursos como armazenamento local e gerenciamento de estado, o React possibilitou a comunicação entre os diferentes componentes da página, facilitando futuras implementações de features como temas, filtros e linguagens",
-        "technologies": [ "HTML", "CSS", "REACT", "🧠" ],
-        "changelog": "A cool change this morning \n lets fix it right now"
-    },
-    {
-        "title": "Personal Portfolio",
-        "github": "https://github.com/HenriqueFLTorres/portfolio",
-        "linkWeb": "https://htportfolio.vercel.app/",
-        "date": "17/03/22",
-        "images": [ "https://i.imgur.com/trGBc5E.png", "https://i.imgur.com/Z84eL4b.png", "https://i.imgur.com/1o1ZJVq.png", "https://media0.giphy.com/media/gVkQmYGazJKap17Aft/giphy.gif?cid=790b761197a16f81c5a29dfb6fda692f923994c8cf71c482&rid=giphy.gif&ct=g" ],
-        "description": "Usando React e Next.js, foi possivel desenvolver um site de multipla linguagem para diferentes tipos de dispositivos, usando um código flexível e layout responsivo com componentes reutilizáveis e uma arquitetura limpa.",
-        "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
-    },
-    {
-        "title": "EzEcommerce Website Ficticio",
-        "github": "https://github.com/HenriqueFLTorres/EzEcommerce-FakeWebsite",
-        "linkWeb": "https://ezecommerce.vercel.app/",
-        "date": "29/03/22",
-        "images": [ "https://i.imgur.com/CmiX6g9.png", "https://i.imgur.com/w6txGeD.png", "https://i.imgur.com/UKmxlS4.png", "https://i.imgur.com/17ODvzt.png", "https://i.imgur.com/81JNzle.png", "https://i.imgur.com/Pth8tLW.png" ],
-        "description": "Conforme necessário para um site de eCommerce, várias páginas e componentes devem se comunicar uns com os outros, fazendo com que React e Next.js sejam a combinação perfeita. Aproveitando de funcionalidades como roteamento e o gerenciamento de estado, foram possíveis realizar conexão entre vários componentes e dados.",
-        "technologies": [ "HTML", "CSS", "REACT", "NextJS" ]
-    }
+  {
+    "title": "Mir4 Crafting Calculator",
+    "github": "https://github.com/HenriqueFLTorres/Mir4-CraftingCalculator",
+    "linkWeb": "https://mir4cc.netlify.app/",
+    "date": "08/03/22",
+    "images": [
+      "https://i.imgur.com/kFUrjL9.png",
+      "https://i.imgur.com/uUD0vMH.png",
+      "https://i.imgur.com/39rweQj.png",
+      "https://i.imgur.com/wTrHRWG.png"
+    ],
+    "description": "Aproveitando recursos como armazenamento local e gerenciamento de estado, o React possibilitou a comunicação entre os diferentes componentes da página, facilitando futuras implementações de features como temas, filtros e linguagens",
+    "technologies": ["HTML", "CSS", "REACT", "🧠"],
+    "changelog": "A cool change this morning \n lets fix it right now"
+  },
+  {
+    "title": "Personal Portfolio",
+    "github": "https://github.com/HenriqueFLTorres/portfolio",
+    "linkWeb": "https://htportfolio.vercel.app/",
+    "date": "17/03/22",
+    "images": [
+      "https://i.imgur.com/trGBc5E.png",
+      "https://i.imgur.com/Z84eL4b.png",
+      "https://i.imgur.com/1o1ZJVq.png",
+      "https://media0.giphy.com/media/gVkQmYGazJKap17Aft/giphy.gif?cid=790b761197a16f81c5a29dfb6fda692f923994c8cf71c482&rid=giphy.gif&ct=g"
+    ],
+    "description": "Usando React e Next.js, foi possivel desenvolver um site de multipla linguagem para diferentes tipos de dispositivos, usando um código flexível e layout responsivo com componentes reutilizáveis e uma arquitetura limpa.",
+    "technologies": ["HTML", "CSS", "REACT", "NextJS"]
+  },
+  {
+    "title": "EzEcommerce Website Ficticio",
+    "github": "https://github.com/HenriqueFLTorres/EzEcommerce-FakeWebsite",
+    "linkWeb": "https://ezecommerce.vercel.app/",
+    "date": "29/03/22",
+    "images": [
+      "https://i.imgur.com/CmiX6g9.png",
+      "https://i.imgur.com/w6txGeD.png",
+      "https://i.imgur.com/UKmxlS4.png",
+      "https://i.imgur.com/17ODvzt.png",
+      "https://i.imgur.com/81JNzle.png",
+      "https://i.imgur.com/Pth8tLW.png"
+    ],
+    "description": "Conforme necessário para um site de eCommerce, várias páginas e componentes devem se comunicar uns com os outros, fazendo com que React e Next.js sejam a combinação perfeita. Aproveitando de funcionalidades como roteamento e o gerenciamento de estado, foram possíveis realizar conexão entre vários componentes e dados.",
+    "technologies": ["HTML", "CSS", "REACT", "NextJS"]
+  },
+  {
+    "title": "Twitch tv Website Clone",
+    "github": "https://github.com/HenriqueFLTorres/twitch-clone",
+    "linkWeb": "https://clonetwitch.vercel.app/",
+    "date": "19/04/22",
+    "images": [
+      "https://i.imgur.com/C5pEo41.png",
+      "https://i.imgur.com/qKn7D3T.png",
+      "https://i.imgur.com/meyf8ql.png",
+      "https://i.imgur.com/N6aA2py.png",
+      "https://i.imgur.com/GJZdhXq.png"
+    ],
+    "description": "Para uma boa fidelidade, eram necessárias boas habilidades de CSS e depuração, e com a ajuda de SCSS e Chrome Dev Tools, pude replicá-lo com boa precisão e até aprender como um grande site é desenvolvido.",
+    "technologies": ["HTML", "CSS", "SCSS", "REACT", "NextJS"]
+  }
 ]
