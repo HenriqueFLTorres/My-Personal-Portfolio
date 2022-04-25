@@ -3,7 +3,7 @@
     position: absolute;
     z-index: 0;
     width: 100%;
-    height: 400%;
+    height: 490%;
 
     overflow: hidden;
 }
@@ -284,9 +284,15 @@
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1350px) {
     .polygonBackground {
-        height: 415%;
+        height: 450%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .polygonBackground {
+        height: 395%;
     }
 }
 
@@ -309,37 +315,19 @@
 }
 @media (max-width: 700px) {
     .polygonBackground {
-        height: 590%;
-    }
-}
-
-@media (max-width: 650px) {
-    .polygonBackground {
-        height: 570%;
+        height: 540%;
     }
 }
 
 @media (max-width: 600px) {
     .polygonBackground {
-        height: 550%;
-    }
-}
-
-@media (max-width: 550px) {
-    .polygonBackground {
-        height: 520%;
+        height: 500%;
     }
 }
 
 @media (max-width: 470px) {
     .polygonBackground {
         height: 480%;
-    }
-}
-
-@media (max-width: 430px) {
-    .polygonBackground {
-        height: 450%;
     }
 }
 
@@ -352,11 +340,5 @@
 @media (max-width: 300px) {
     .polygonBackground {
         height: 400%;
-    }
-}
-
-@media (max-width: 250px) {
-    .polygonBackground {
-        height: 360%;
     }
 }

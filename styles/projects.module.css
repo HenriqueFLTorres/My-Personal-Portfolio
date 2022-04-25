@@ -11,7 +11,7 @@
 
 .marginTop {
     padding-top: 10%;
-    width: 100%; 
+    width: 100%;
 }
 
 .bigTitle {
@@ -27,7 +27,7 @@
     gap: 10%;
     justify-content: space-evenly;
     grid-template-columns: repeat(auto-fit, 30%);
-    grid-auto-rows: 25vw;
+    grid-auto-rows: clamp(40rem, 1rem + 50vh, 80rem);
 
     width: 80%;
     height: auto;
@@ -192,7 +192,7 @@
     width: 100%;
 
     opacity: 0.5;
-    filter: blur(.4vw);
+    filter: blur(2rem);
 
     transition-property: filter, opacity;
     transition-duration: 0.8s;
@@ -268,7 +268,7 @@
 }
 
 .cardInfo p {
-    font-size: var(--step--1);
+    font-size: var(--step--2);
     margin-block: auto;
 }
 
@@ -355,7 +355,7 @@
 
     color: var(--color-terciary);
 
-    margin-top: 15%;
+    margin-top: 22.5%;
     margin-bottom: 10%;
 
     backdrop-filter: blur(40px);
@@ -398,8 +398,28 @@
     color: rgb(172, 172, 172);
 }
 
+@media (max-width: 1400px) {
+    .bigProjectsContainer {
+        grid-auto-rows: clamp(40rem, 1rem + 35vw, 80rem);
+    }
+    
+    .seeMore {
+        margin-top: 40rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bigProjectsContainer {
+        grid-auto-rows: clamp(20rem, 1rem + 35vh, 80rem);
+    }
+
+    .seeMore {
+        margin-top: 30rem;
+    }
+}
 
 @media (max-width: 700px) {
+
     .bigProjectsContainer {
         width: 70%;
         height: max-content;
@@ -473,7 +493,7 @@
         width: 80%;
         height: auto;
 
-        margin-top: 50%;
+        margin-top: 40rem;
         padding: 5%;
         border-radius: 2vw;
     }
@@ -486,15 +506,15 @@
 @media (max-width: 550px) {
 
     .bigCard .cardInfo .head h1 {
-        font-size: var(--step-1);
+        font-size: var(--step-2);
     }
     
     .bigProjectsContainer .bigCard .cardInfo h3 {
-        font-size: var(--step-0);
+        font-size: var(--step-1);
     }
     
     .bigProjectsContainer .bigCard .cardInfo p {
-        font-size: var(--step-0);
+        font-size: var(--step-1);
         height: 60%;
     }
 
@@ -505,29 +525,32 @@
         height: auto;
     }
 
+    .seeMore {
+        margin-top: 35rem;
+    }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
 
     .bigCard .cardInfo .head h1 {
-        font-size: var(--step-0);
+        font-size: var(--step-3);
     }
     
     .bigProjectsContainer .bigCard .cardInfo h3 {
-        font-size: var(--step--1);
+        font-size: var(--step-2);
     }
     
     .bigProjectsContainer .bigCard .cardInfo p {
-        font-size: var(--step-0);
+        font-size: var(--step-2);
         height: 60%;
     }
 
 }
 
-
+/* 
 
 @media (max-width: 700px) and (orientation: landscape) {
     .bigProjectsContainer {
         grid-auto-rows: 50vw;
     }
-}
+} */

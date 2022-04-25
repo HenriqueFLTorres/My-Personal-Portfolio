@@ -41,11 +41,11 @@
       "https://i.imgur.com/81JNzle.png",
       "https://i.imgur.com/Pth8tLW.png"
     ],
-    "description": "Conforme necessário para um site de eCommerce, várias páginas e componentes devem se comunicar uns com os outros, fazendo com que React e Next.js sejam a combinação perfeita. Aproveitando de funcionalidades como roteamento e o gerenciamento de estado, foram possíveis realizar conexão entre vários componentes e dados.",
+    "description": "Conforme necessário para um site de eCommerce, várias páginas e componentes devem se comunicar uns com os outros, fazendo com que React e Next.js sejam a combinação perfeita.",
     "technologies": ["HTML", "CSS", "REACT", "NextJS"]
   },
   {
-    "title": "Twitch tv Website Clone",
+    "title": "Twitch TV Website Clone",
     "github": "https://github.com/HenriqueFLTorres/twitch-clone",
     "linkWeb": "https://clonetwitch.vercel.app/",
     "date": "19/04/22",
