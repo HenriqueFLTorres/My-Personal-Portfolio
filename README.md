@@ -1,5 +1,8 @@
 <h1 align="center">Personal Portfolio</h1>
 
+<h4 align="center">⚠️ My portfolio has been reworked: https://github.com/HenriqueFLTorres/portfolio-rework</h4>
+<br/><br/>
+
 <p align="center">
   <img width="30%" src="https://user-images.githubusercontent.com/96752883/158870016-66ce131c-d517-4aac-bad0-ca522fd3733c.png">
 </p>
